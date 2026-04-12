@@ -38,6 +38,7 @@ This is the single source of truth for any Claude session — business, technica
 |---|---|
 | Setup fee (one-time) | €400–800 |
 | Monthly retainer | €120–180 (~3,500–4,500 CZK) |
+| Fair-use cap (included) | 1,500 automated emails + 750 AI-booked appointments/month |
 | Usage overage | Cost + 30% |
 | Gross margin | ~80% |
 | Monthly infra cost per client | ~€25–35 (shared instance model) |
@@ -210,7 +211,6 @@ We beat all three on price and convenience.
 ## 8. Open Questions to Resolve
 
 - [ ] Finalise landing page body copy — outcome-focused, one target client in mind
-- [ ] Define fair-use cap for monthly retainer (e.g. 50,000 actions/month)
 - [ ] Build cold email sequence (3–5 emails: problem → solution → demo → CTA)
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
 - [ ] Set up Instagram account — first 3 posts planned

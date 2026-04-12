@@ -43,6 +43,7 @@ The client does not need technical skills. Everything is managed remotely by the
 |---|---|---|
 | Setup fee (one-time) | €400–800 | Covers deployment, workflow build, integration |
 | Monthly retainer | €120–180 (~3,500–4,500 CZK) | Hosting, API costs, monitoring, support |
+| Fair-use cap (included) | 1 500 automaticky zodpovězených e-mailů + 750 rezervací přes AI sekretářku/měsíc | Naprostá většina ordinací tohoto limitu nikdy nedosáhne |
 | Usage overage | Cost + 30% | Above fair-use threshold |
 
 **Infrastructure decision:** Shared n8n instance. Each client gets isolated workflows, credentials, and webhook paths. Dedicated instance offered as premium upgrade (+€30/month) only on request.
@@ -116,7 +117,6 @@ VÁŠ AI.
 ## 8. Next Steps (Prioritised)
 
 - [ ] Finalise landing page body copy — outcome-focused, one target client in mind
-- [ ] Define fair-use cap for monthly retainer (e.g. 50,000 actions/month)
 - [ ] Build cold email sequence (3–5 emails: problem → solution → demo → CTA)
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
 - [ ] Set up Instagram account — first 3 posts planned
@@ -127,5 +127,4 @@ VÁŠ AI.
 
 ## 9. Open Questions to Resolve
 
-1. What is the fair-use cap for the monthly retainer?
-2. Landing page body copy — what does it say beyond the headline?
+1. Landing page body copy — what does it say beyond the headline?
