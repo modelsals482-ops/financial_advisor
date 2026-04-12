@@ -789,6 +789,141 @@
     }
     .demo-chip:hover { background: var(--blue-s); color: #93c5fd; border-color: rgba(59,130,246,0.3); }
 
+    /* ── PRICING ── */
+    .pricing-section {
+      padding: 7rem 4rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+    .pricing-cards {
+      display: flex;
+      gap: 1.5rem;
+      max-width: 780px;
+      margin: 4rem auto 0;
+      justify-content: center;
+      align-items: stretch;
+    }
+    .pricing-card {
+      background: var(--surface);
+      border: 1px solid var(--border-h);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      flex: 1;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
+    .pricing-card-main {
+      background: rgba(59,130,246,0.06);
+      border-color: rgba(59,130,246,0.3);
+      box-shadow: 0 20px 60px rgba(59,130,246,0.12);
+    }
+    .pricing-type {
+      display: inline-block;
+      padding: 0.3rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      background: var(--surface-h);
+      color: var(--t2);
+      border: 1px solid var(--border);
+    }
+    .pricing-type-blue { background: var(--blue-s); color: #93c5fd; border-color: rgba(59,130,246,0.3); }
+    .pricing-amount {
+      font-size: 3.5rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .pricing-period {
+      font-size: 0.85rem;
+      color: var(--t2);
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    .pricing-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      flex: 1;
+    }
+    .pricing-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.88rem;
+      color: var(--t2);
+      line-height: 1.5;
+    }
+    .pricing-features li::before {
+      content: '✓';
+      color: var(--green);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .pricing-note {
+      margin-top: 2.5rem;
+      font-size: 0.88rem;
+      color: var(--t3);
+    }
+    .pricing-note strong { color: var(--t2); }
+
+    /* ── GUARANTEES ── */
+    .guarantees-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      max-width: 900px;
+      margin: 2.5rem auto 0;
+    }
+    .guarantee-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      text-align: left;
+    }
+    .guarantee-icon { font-size: 1.4rem; margin-bottom: 0.65rem; }
+    .guarantee-title { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .guarantee-desc { font-size: 0.8rem; color: var(--t2); line-height: 1.55; }
+
+    /* ── CONTACT ── */
+    .contact-section {
+      padding: 8rem 4rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 55% 45% at 50% 50%, rgba(59,130,246,0.07), transparent);
+    }
+    .contact-section .section-title,
+    .contact-section .section-sub { position: relative; }
+    .contact-box {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+    }
+    .contact-note {
+      font-size: 0.85rem;
+      color: var(--t3);
+      margin-top: 0.5rem;
+    }
+    .contact-note strong { color: var(--t2); }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       nav { padding: 1rem 1.5rem; }
@@ -800,13 +935,17 @@
       .built-for-cards { grid-template-columns: repeat(2, 1fr); }
       .steps { grid-template-columns: 1fr; }
       footer { flex-direction: column; gap: 1.5rem; text-align: center; padding: 2rem 1.5rem; }
-      .demo-section, .how-it-works, .trusted, .get-started, .built-for { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .demo-section, .how-it-works, .trusted, .get-started, .built-for,
+      .pricing-section, .contact-section { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .guarantees-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 600px) {
       .built-for-cards { grid-template-columns: 1fr; }
       .hero { padding: 7rem 1.5rem 4rem; }
       .hero-actions { flex-direction: column; width: 100%; }
       .get-started-actions { flex-direction: column; align-items: center; }
+      .pricing-cards { flex-direction: column; }
+      .guarantees-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -823,18 +962,17 @@
     <ul class="nav-links">
       <li><a href="#features">Funkce</a></li>
       <li><a href="#how">Jak to funguje</a></li>
-      <li><a href="#demo">Živá ukázka</a></li>
       <li><a href="#personas">Pro koho</a></li>
+      <li><a href="#pricing">Ceník</a></li>
     </ul>
-    <!-- TODO: change onclick to href="YOUR_SIGNUP_URL" or keep scroll-to-demo -->
-    <button class="nav-cta" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">Vyzkoušet zdarma</button>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Domluvit konzultaci</button>
   </nav>
 
   <!-- ── HERO ── -->
   <section class="hero">
     <span class="hero-eyebrow">
       <span class="eyebrow-dot"></span>
-      Platforma pro byznys první generace AI
+      Spravovaná AI služba — nastavíme vše za vás
     </span>
     <h1 class="hero-title">
       VÁŠ <span class="grad-blue">E-MAIL</span>.<br>
@@ -842,11 +980,10 @@
       VÁŠ <span class="grad-purple">AI</span>.
     </h1>
     <p class="hero-sub">
-      Jedna sada nástrojů, která čte vaši schránku, sestavuje odpovědi a spravuje váš diář — zcela poháněná AI agenty.
+      Postaráme se o vaši e-mailovou komunikaci a kalendář. Vy se soustřeďte na klienty — zbytek necháte na nás.
     </p>
     <div class="hero-actions">
-      <!-- TODO: replace onclick with href="YOUR_SIGNUP_URL" -->
-      <button class="btn-lg btn-primary-lg" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">Začít zdarma</button>
+      <button class="btn-lg btn-primary-lg" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Domluvit konzultaci</button>
       <button class="btn-lg btn-ghost-lg" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Zobrazit funkce →</button>
     </div>
 
@@ -904,21 +1041,21 @@
   <section class="stats reveal">
     <div class="stat-cell">
       <div class="stat-num" style="background:linear-gradient(135deg,#60a5fa,#2563eb);-webkit-background-clip:text;-webkit-text-fill-color:transparent">
-        <span class="counter" data-target="12400">0</span>+
+        48 h
       </div>
-      <div class="stat-label">Zpracovaných e-mailů denně</div>
+      <div class="stat-label">Zprovoznění od A do Z</div>
     </div>
     <div class="stat-cell">
       <div class="stat-num" style="background:linear-gradient(135deg,#4ade80,#16a34a);-webkit-background-clip:text;-webkit-text-fill-color:transparent">
-        <span class="counter" data-target="98">0</span>%
+        3×
       </div>
-      <div class="stat-label">Přesnost odpovědí</div>
+      <div class="stat-label">Méně času ve schránce</div>
     </div>
     <div class="stat-cell">
       <div class="stat-num" style="background:linear-gradient(135deg,#c084fc,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent">
-        <span class="counter" data-target="3">0</span>x
+        0
       </div>
-      <div class="stat-label">Rychlejší správa e-mailů</div>
+      <div class="stat-label">Potřebných IT znalostí</div>
     </div>
   </section>
 
@@ -1004,31 +1141,31 @@
   <!-- ── BUILT FOR ── -->
   <section class="built-for reveal" id="personas">
     <div class="built-for-title">
-      VYTVOŘENO PRO <span style="display:inline-block;width:0.85em;height:0.85em;background:linear-gradient(135deg,#3b82f6,#a855f7);border-radius:0.18em;vertical-align:-0.05em;margin:0 0.05em"></span> TVŮRCE
+      NAVRŽENO PRO <span style="display:inline-block;width:0.85em;height:0.85em;background:linear-gradient(135deg,#3b82f6,#a855f7);border-radius:0.18em;vertical-align:-0.05em;margin:0 0.05em"></span> VÁŠ OBOR
     </div>
-    <p style="color:var(--t2);font-size:1rem;max-width:480px;margin:0 auto;line-height:1.7">
-      Ať jste samostatný podnikatel nebo vedete celý tým — AI Business Suite se přizpůsobí vašemu způsobu práce.
+    <p style="color:var(--t2);font-size:1rem;max-width:520px;margin:0 auto;line-height:1.7">
+      Pracujete s lidmi, ne s počítači. Proto my řídíme AI — a vy se soustředíte na své klienty.
     </p>
     <div class="built-for-cards">
       <div class="persona-card">
-        <div class="persona-icon">◈</div>
-        <div class="persona-title">Podnikatelé</div>
-        <div class="persona-desc">Mějte přehled o každém klientském e-mailu a nikdy nezmeškejte schůzku — bez nutnosti najímat asistenta.</div>
+        <div class="persona-icon">🐾</div>
+        <div class="persona-title">Veterinární ordinace</div>
+        <div class="persona-desc">Majitelé mazlíčků píší desítky zpráv denně. AI potvrdí termín, zodpoví rutinní dotaz a vy se soustředíte na zvíře na stole.</div>
       </div>
       <div class="persona-card">
-        <div class="persona-icon">⬡</div>
-        <div class="persona-title">Freelanceři</div>
-        <div class="persona-desc">Odpovídejte klientům rychleji, bez námahy spravujte svůj diář a soustřeďte se na práci, která vás baví.</div>
+        <div class="persona-icon">🦷</div>
+        <div class="persona-title">Zubní ordinace</div>
+        <div class="persona-desc">Pacienti se ptají na termíny, ceny a procedury. AI odpoví okamžitě — ve dne i v noci — bez zatížení recepce.</div>
       </div>
       <div class="persona-card">
-        <div class="persona-icon">⊞</div>
-        <div class="persona-title">Malé týmy</div>
-        <div class="persona-desc">Dejte každému členovi týmu AI boost produktivity bez složitého zapracování nebo vysokých nákladů.</div>
+        <div class="persona-icon">✂️</div>
+        <div class="persona-title">Kadeřnictví a salony</div>
+        <div class="persona-desc">Rezervace, přeplánování a dotazy na služby vyřídí AI. Žádné přehlédnuté zprávy, žádné telefonáty uprostřed práce.</div>
       </div>
       <div class="persona-card">
-        <div class="persona-icon">↗</div>
-        <div class="persona-title">Agentury</div>
-        <div class="persona-desc">Zvládněte velký objem e-mailů od více klientů s konzistentními, profesionálními AI odpověďmi.</div>
+        <div class="persona-icon">💆</div>
+        <div class="persona-title">Fyzioterapie</div>
+        <div class="persona-desc">Komunikujte s pacienty profesionálně a rychle — bez ztráty cenného času mezi sezeními.</div>
       </div>
     </div>
   </section>
@@ -1037,25 +1174,25 @@
   <section class="how-it-works" id="how">
     <div class="section-label">Postup</div>
     <h2 class="section-title reveal">Jak to funguje</h2>
-    <p class="section-sub reveal">Tři jednoduché kroky od nastavení po plně automatizovanou firemní schránku.</p>
+    <p class="section-sub reveal">Nezabíráme vám čas. Od prvního hovoru po hotový systém — bez jediného technického kroku z vaší strany.</p>
     <div class="steps">
       <div class="step-card reveal">
         <div class="step-num">01</div>
-        <div class="step-icon" style="background:var(--blue-s);border:1px solid rgba(59,130,246,0.3)">⊕</div>
-        <div class="step-title">Propojte své účty</div>
-        <div class="step-desc">Propojte Gmail a Google Kalendář přes naše zabezpečené n8n webhooky. Nastavení trvá méně než 5 minut.</div>
+        <div class="step-icon" style="background:var(--blue-s);border:1px solid rgba(59,130,246,0.3)">◎</div>
+        <div class="step-title">Zavoláme si</div>
+        <div class="step-desc">Během 20minutového hovoru zjistíme váš komunikační styl, typické dotazy klientů a co od AI čekáte. Žádná technika, jen rozhovor.</div>
       </div>
       <div class="step-card reveal" style="transition-delay:0.1s">
         <div class="step-num">02</div>
-        <div class="step-icon" style="background:var(--green-s);border:1px solid rgba(34,197,94,0.3)">◆</div>
-        <div class="step-title">AI pozná váš styl</div>
-        <div class="step-desc">AI přečte vaši schránku a kalendář a vytvoří kontext tak, aby každá odpověď zněla, jako by ji napsal přímo vy.</div>
+        <div class="step-icon" style="background:var(--green-s);border:1px solid rgba(34,197,94,0.3)">⚙</div>
+        <div class="step-title">My nastavíme vše</div>
+        <div class="step-desc">Náš tým napojí AI na vaši schránku a kalendář do 48 hodin. Žádné klikání v nastavení, žádná technická práce z vaší strany.</div>
       </div>
       <div class="step-card reveal" style="transition-delay:0.2s">
         <div class="step-num">03</div>
         <div class="step-icon" style="background:var(--purple-s);border:1px solid rgba(168,85,247,0.3)">▶</div>
-        <div class="step-title">Schvalte a jeďte</div>
-        <div class="step-desc">Zkontrolujte AI návrhy, případně upravte a odešlete. Vy máte kontrolu — AI dělá tu těžkou práci.</div>
+        <div class="step-title">Vy jen schvalujete</div>
+        <div class="step-desc">AI navrhuje odpovědi, vy je jedním klikem schválíte nebo pošlete rovnou. Plná kontrola — zlomek původního času.</div>
       </div>
     </div>
   </section>
@@ -1143,32 +1280,100 @@
     </div>
   </section>
 
+  <!-- ── PRICING ── -->
+  <section class="pricing-section reveal" id="pricing">
+    <div class="section-label">Transparentní ceník</div>
+    <h2 class="section-title">Jasná cena. Žádná překvapení.</h2>
+    <p class="section-sub">Platíte jednou za nastavení, pak pevnou měsíční částku. Žádné skryté poplatky, žádný roční závazek.</p>
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <div class="pricing-type">Jednorázově</div>
+        <div class="pricing-amount" style="background:linear-gradient(135deg,#60a5fa,#2563eb);-webkit-background-clip:text;-webkit-text-fill-color:transparent">5 000 Kč</div>
+        <div class="pricing-period">nastavení systému</div>
+        <ul class="pricing-features">
+          <li>Kompletní nastavení AI agentů</li>
+          <li>Napojení Gmail + Google Kalendář</li>
+          <li>Personalizace vašeho komunikačního stylu</li>
+          <li>Předání a zaškolení (30 min)</li>
+        </ul>
+      </div>
+      <div class="pricing-card pricing-card-main">
+        <div class="pricing-type pricing-type-blue">Měsíční provoz</div>
+        <div class="pricing-amount" style="background:linear-gradient(135deg,#4ade80,#16a34a);-webkit-background-clip:text;-webkit-text-fill-color:transparent">3 000 Kč</div>
+        <div class="pricing-period">za měsíc · bez ročního závazku</div>
+        <ul class="pricing-features">
+          <li>Průběžný monitoring a správa AI agentů</li>
+          <li>Aktualizace a opravy na vyžádání</li>
+          <li>Měsíční report aktivity</li>
+          <li>Podpora v češtině (e-mail + telefon)</li>
+        </ul>
+        <button class="btn-lg btn-primary-lg" style="width:100%" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Domluvit konzultaci</button>
+      </div>
+    </div>
+    <p class="pricing-note">Celkem za první měsíc: <strong>8 000 Kč</strong>. Od druhého měsíce již jen <strong>3 000 Kč</strong>.</p>
+  </section>
+
   <!-- ── GET STARTED ── -->
   <section class="get-started reveal">
     <h2 class="get-started-title">
       ZAČNĚTE<br>S <span style="background:linear-gradient(135deg,#60a5fa,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent">AI SUITE</span>
     </h2>
     <p class="get-started-sub">
-      Nastavení za minuty. Žádné složité zapracování. Začněte šetřit hodiny každý den.
+      Nastavíme vše do 48 hodin. Žádné technické znalosti. Konzultace je zdarma a nezávazná.
     </p>
     <div class="get-started-actions">
-      <!-- TODO: add onclick="location.href='YOUR_SIGNUP_URL'" -->
-      <button class="btn-lg btn-primary-lg">Začít zdarma</button>
-      <!-- TODO: add onclick="location.href='YOUR_DOCS_URL'" -->
-      <button class="btn-lg btn-ghost-lg">Zobrazit dokumentaci →</button>
+      <button class="btn-lg btn-primary-lg" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Domluvit konzultaci</button>
+      <button class="btn-lg btn-ghost-lg" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">Zobrazit ceník →</button>
     </div>
   </section>
 
-  <!-- ── TRUSTED BY ── -->
+  <!-- ── GUARANTEES ── -->
   <section class="trusted reveal">
-    <div class="trusted-label">Důvěřují nám progresivní týmy</div>
-    <div class="trusted-logos">
-      <span class="trust-logo">NOVÁK & CO</span>
-      <span class="trust-logo">DIGITECH</span>
-      <span class="trust-logo">GROWMARK</span>
-      <span class="trust-logo">SMARTFLOW</span>
-      <span class="trust-logo">BUILDFAST</span>
-      <span class="trust-logo">LAUNCHPAD</span>
+    <div class="trusted-label">Proč si vybrat nás</div>
+    <div class="guarantees-grid">
+      <div class="guarantee-item">
+        <div class="guarantee-icon">⚡</div>
+        <div class="guarantee-title">Nastavení do 48 hodin</div>
+        <div class="guarantee-desc">Od prvního hovoru po fungující systém za dva pracovní dny. Bez čekání, bez průtahů.</div>
+      </div>
+      <div class="guarantee-item">
+        <div class="guarantee-icon">🔓</div>
+        <div class="guarantee-title">Bez ročního závazku</div>
+        <div class="guarantee-desc">Platíte měsíc od měsíce. Kdykoli můžete odejít — bez sankcí a bez podmínek.</div>
+      </div>
+      <div class="guarantee-item">
+        <div class="guarantee-icon">🧩</div>
+        <div class="guarantee-title">Nula IT znalostí potřeba</div>
+        <div class="guarantee-desc">Celé nastavení a správu řešíme my. Vy nemusíte rozumět ničemu technickému.</div>
+      </div>
+      <div class="guarantee-item">
+        <div class="guarantee-icon">🛡️</div>
+        <div class="guarantee-title">Vaše data zůstávají vaše</div>
+        <div class="guarantee-desc">Přistupujeme jen k tomu, co výslovně povolíte. Žádné sdílení s třetími stranami.</div>
+      </div>
+      <div class="guarantee-item">
+        <div class="guarantee-icon">💬</div>
+        <div class="guarantee-title">Podpora v češtině</div>
+        <div class="guarantee-desc">Řešíme problémy v reálném čase — e-mailem nebo telefonem, česky.</div>
+      </div>
+      <div class="guarantee-item">
+        <div class="guarantee-icon">📊</div>
+        <div class="guarantee-title">Měsíční přehled aktivity</div>
+        <div class="guarantee-desc">Každý měsíc dostanete report: kolik zpráv AI vyřídila a kolik hodin vám ušetřila.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact-section reveal" id="contact">
+    <div class="section-label">Konzultace zdarma</div>
+    <h2 class="section-title">Nezávazná konzultace</h2>
+    <p class="section-sub">Zavoláme si 20 minut, zjistíme, zda vám naše řešení sedí — a když ano, nastavíme vše do 48 hodin.</p>
+    <div class="contact-box">
+      <a class="btn-lg btn-primary-lg" href="mailto:modelsals482@gmail.com?subject=Konzultace%20AI%20Business%20Suite" style="text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem">
+        Napsat e-mail →
+      </a>
+      <p class="contact-note">Nebo nás kontaktujte přímo na <strong>modelsals482@gmail.com</strong></p>
     </div>
   </section>
 
@@ -1176,13 +1381,11 @@
   <footer>
     <span class="footer-logo">AI BUSINESS SUITE</span>
     <div class="footer-links">
-      <a href="#">Funkce</a>
-      <!-- TODO: replace # with YOUR_DOCS_URL -->
-      <a href="#">Dokumentace</a>
+      <a href="#features">Funkce</a>
+      <a href="#pricing">Ceník</a>
       <!-- TODO: replace # with YOUR_PRIVACY_POLICY_URL -->
       <a href="#">Ochrana dat</a>
-      <!-- TODO: replace # with mailto:YOUR_EMAIL or YOUR_CONTACT_PAGE_URL -->
-      <a href="#">Kontakt</a>
+      <a href="#contact">Kontakt</a>
     </div>
     <span class="footer-copy">© 2025 AI Business Suite. Všechna práva vyhrazena.</span>
   </footer>
