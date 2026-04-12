@@ -26,6 +26,9 @@ Jakub
 AI Business Suite
 
 ---
+*Pokud si nepřejete dostávat obchodní sdělení, odpovězte slovem „odhlásit". Zasíláno v souladu se zákonem č. 480/2004 Sb.*
+
+---
 
 ## Email 2 — Solution (Day 3)
 
@@ -52,6 +55,9 @@ AI Business Suite
 modelsals482@gmail.com
 
 ---
+*Pokud si nepřejete dostávat obchodní sdělení, odpovězte slovem „odhlásit". Zasíláno v souladu se zákonem č. 480/2004 Sb.*
+
+---
 
 ## Email 3 — Demo + CTA (Day 7)
 
@@ -75,6 +81,9 @@ Jakub
 AI Business Suite
 
 ---
+*Pokud si nepřejete dostávat obchodní sdělení, odpovězte slovem „odhlásit". Zasíláno v souladu se zákonem č. 480/2004 Sb.*
+
+---
 
 ## Sending Notes
 
@@ -83,7 +92,7 @@ AI Business Suite
 - **Volume target:** 10–20 sends/week manually; track replies in a simple spreadsheet
 - **Track:** opens (if possible), replies, calls booked
 - **Do not BCC multiple recipients** — send individually for personalization
-- **Legal note:** Czech law (GDPR + zákon č. 480/2004 Sb.) requires a clear opt-out; add a one-liner to each email footer once you have a formal unsubscribe mechanism
+- **Legal note:** GDPR opt-out footer added to all emails per zákon č. 480/2004 Sb. Once you have a landing page with an unsubscribe form, replace the reply-based opt-out with a link.
 
 ---
 
