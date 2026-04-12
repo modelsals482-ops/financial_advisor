@@ -1,0 +1,7 @@
+node_modules/
+sample_invoice.pdf
+sample_invoice_extracted.xlsx
+
+# Claude Code settings contain credentials — never commit
+.claude/settings.json
+.claude/settings.local.json
