@@ -1,6 +1,6 @@
 # Claude Master Context — AI Automation MSP
 _Read this at the start of every session to restore full context._
-_Last updated: 2026-04-12_
+_Last updated: 2026-04-14_
 
 ---
 
@@ -36,27 +36,35 @@ This is the single source of truth for any Claude session — business, technica
 **Business model:**
 | Component | Amount |
 |---|---|
-| Setup fee (one-time) | €400–800 |
-| Monthly retainer | €120–180 (~3,500–4,500 CZK) |
+| Setup fee (one-time) | 8,000–10,000 CZK |
+| **AI Front Desk** (booking + reminders + FAQ bot) | 4,500–5,000 CZK/month |
+| **Email Bot** (AI email replies) | 2,500–3,000 CZK/month |
+| **PDF Extractor** (invoices / intake forms / price lists → Excel) | 1,500–2,000 CZK/month |
+| **Full bundle** (all three services) | ~7,500 CZK/month |
 | Fair-use cap (included) | 1,500 automated emails + 750 AI-booked appointments/month |
 | Usage overage | Cost + 30% |
-| Gross margin | ~80% |
-| Monthly infra cost per client | ~€25–35 (shared instance model) |
+| Gross margin | ~80–85% |
+| Monthly infra cost per client | ~1,100–1,700 CZK (shared instance model) |
+
+**Product notes:**
+- AI Front Desk bundles booking + appointment reminders + FAQ bot — all run in the same n8n workflow, no marginal cost to include them
+- PDF Extractor fits primary ICP only for intake forms (vets/physios with scanned paper forms) and supplier price lists — invoice volume too low for salons/vets to justify it
+- PDF Extractor is a stronger fit for secondary ICP: small firms (5–10 people) and freelancers with high invoice volume
 
 **Infrastructure decision (confirmed):** Shared n8n instance. Each client gets isolated workflows, credentials, and webhook paths within one Railway-hosted instance. Offer dedicated instance as a paid upgrade (+€30/month) only when a client specifically requests it.
 
 **Unit economics:**
 | Metric | Value |
 |---|---|
-| Monthly cost per client | ~€25–35 |
-| Monthly revenue per client | ~€150 |
-| LTV (2-year client) | ~€3,600 + setup fee |
-| CAC (currently) | ~€0 (personal network) |
-| LTV:CAC ratio | ~18:1 |
+| Monthly cost per client | ~1,100–1,700 CZK |
+| Monthly revenue per client (front desk only) | ~4,500–5,000 CZK |
+| Monthly revenue per client (full bundle) | ~7,500 CZK |
+| LTV (2-year client, front desk only) | ~108,000–120,000 CZK + setup |
+| CAC (currently) | ~0 CZK (personal network) |
 
 **Personal financial situation:** Student. Father covers 12,000 CZK/month (food). Real monthly burn = ~1,000 CZK (Claude 500 + Railway 500). Food is fully offset.
 
-**Break-even:** Operational break-even at **1 client** (~3,750 CZK in vs. ~1,000 CZK burn = net +2,750/month). Personal living costs are covered independently. First 10 clients = ~€1,200/month recurring profit on top.
+**Break-even:** Operational break-even at **1 client**. First 10 clients = substantial recurring profit on top.
 
 **Funding:** ~50,000 CZK available from friends as investment. This is **pure growth capital** (not survival capital) — runway at zero clients is ~50 months. Can be deployed on ads, content, or tooling to accelerate acquisition. No pressure to discount to close first client.
 
@@ -88,6 +96,11 @@ This is the single source of truth for any Claude session — business, technica
 ## 4. Brand & Positioning
 
 **Personality words:** Practical · Transparent · Outcome-first · Personal · No-jargon
+
+**Business name (decision pending):**
+- Constraints: Czech-first, no -o ending, no diacritics, 1–2 syllables
+- Top candidates: **Klid** (calm/peace of mind — preferred), Pohoda (ease/no-hassle), Pauza (a break)
+- Domain approach: buy via Cloudflare Registrar → Cloudflare Email Routing (free) to start → upgrade to Google Workspace (~€6/month) at first paying client
 
 **Current landing page headline:**
 ```
@@ -184,6 +197,8 @@ We beat all three on price and convenience.
 | Czech competitor analysis | `competition/competitors.md` | Complete |
 | "COMPLETE PRODUCT" HTML website | `C:/Users/Jakub/Desktop/html.websites/` | Exists locally — deploy status unknown |
 | Business/financial learning | Learning Tracker section below | Ongoing |
+| Budget / pricing spreadsheet | `Basic rozpocet.xlsx` in Firm_advisor dir | Complete — min/max scenarios, margins modelled |
+| Business name decision | See §4 | Pending — Klid is top candidate |
 
 ---
 
@@ -210,6 +225,7 @@ We beat all three on price and convenience.
 
 ## 8. Open Questions to Resolve
 
+- [ ] **Finalise business name** — Klid is top candidate, needs final decision then domain purchase
 - [ ] Finalise landing page body copy — outcome-focused, one target client in mind
 - [ ] Build cold email sequence (3–5 emails: problem → solution → demo → CTA)
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
@@ -274,11 +290,12 @@ Topics mastered so far (mark at 3 correct applications):
 
 - **Business type:** (vet / dentist / salon / physio / freelancer / other)
 - **Location:** (Prague district or city)
-- **Monthly retainer:** CZK          EUR
+- **Services:** (Front Desk / Email Bot / PDF Extractor / Bundle)
+- **Monthly retainer:** CZK
 - **Setup fee paid:** Yes / No / Partial
 - **Integration type:** WhatsApp / Custom frontend / Other
 - **Railway instance:** Shared / Dedicated
-- **Monthly infra cost:** ~€
+- **Monthly infra cost:** ~CZK
 - **Gross margin on this client:** %
 - **Active since:**
 - **Fair-use status:** Under / Over threshold
@@ -291,7 +308,7 @@ Topics mastered so far (mark at 3 correct applications):
 
 ## 11. Git & Repo Conventions
 
-- **This repo:** `modelsals482-ops/Test-claude`
+- **This repo:** `modelsals482-ops/financial_advisor`
 - **Active branch:** `claude/update-docs-cleanup-CPade`
 - **Never push to `main` directly**
 - **Gitignored (credentials):** `.claude/settings.json`, `.claude/settings.local.json`
