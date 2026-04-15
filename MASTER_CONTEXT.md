@@ -1,6 +1,6 @@
 # Claude Master Context — AI Automation MSP
 _Read this at the start of every session to restore full context._
-_Last updated: 2026-04-14_
+_Last updated: 2026-04-15_
 
 ---
 
@@ -97,10 +97,9 @@ This is the single source of truth for any Claude session — business, technica
 
 **Personality words:** Practical · Transparent · Outcome-first · Personal · No-jargon
 
-**Business name (decision pending):**
-- Constraints: Czech-first, no -o ending, no diacritics, 1–2 syllables
-- Top candidates: **Klid** (calm/peace of mind — preferred), Pohoda (ease/no-hassle), Pauza (a break)
-- Domain approach: buy via Cloudflare Registrar → Cloudflare Email Routing (free) to start → upgrade to Google Workspace (~€6/month) at first paying client
+**Business name: ALSflow (decided ✓)**
+- Domain: **alsflow.cz** — purchase via Wedos.cz (~150–200 CZK/year)
+- Email: info@alsflow.cz via Cloudflare Email Routing (free forwarding to Gmail) → upgrade to Google Workspace (~€6/month) at first paying client
 
 **Current landing page headline:**
 ```
@@ -192,13 +191,11 @@ We beat all three on price and convenience.
 | Project | Location | Status |
 |---|---|---|
 | AI Automation MSP — business build | This file / `final_plan.md` | Active — building first 10 clients |
-| Landing page | `landing_page_requirements.docx` on desktop | In progress — headline set, copy TBD |
+| Landing page (HTML) | `website/main_landing_page.html` in this repo | Updated — ALSflow brand, 3 features, pricing section, animations |
 | PDF → Excel n8n workflow | `modelsals482-ops/Test-claude` repo | Built and deployed |
 | Czech competitor analysis | `competition/competitors.md` | Complete |
-| "COMPLETE PRODUCT" HTML website | `C:/Users/Jakub/Desktop/html.websites/` | Exists locally — deploy status unknown |
 | Business/financial learning | Learning Tracker section below | Ongoing |
 | Budget / pricing spreadsheet | `Basic rozpocet.xlsx` in Firm_advisor dir | Complete — min/max scenarios, margins modelled |
-| Business name decision | See §4 | Pending — Klid is top candidate |
 
 ---
 
@@ -225,7 +222,8 @@ We beat all three on price and convenience.
 
 ## 8. Open Questions to Resolve
 
-- [ ] **Finalise business name** — Klid is top candidate, needs final decision then domain purchase
+- [ ] Purchase alsflow.cz via Wedos.cz and set up Cloudflare Email Routing → info@alsflow.cz forwarding to Gmail
+- [ ] Upgrade to Google Workspace (info@alsflow.cz) at first paying client
 - [ ] Finalise landing page body copy — outcome-focused, one target client in mind
 - [ ] Build cold email sequence (3–5 emails: problem → solution → demo → CTA)
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
