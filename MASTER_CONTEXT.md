@@ -191,11 +191,14 @@ We beat all three on price and convenience.
 | Project | Location | Status |
 |---|---|---|
 | AI Automation MSP — business build | This file / `final_plan.md` | Active — building first 10 clients |
-| Landing page (HTML) | `website/main_landing_page.html` in this repo | Updated — ALSflow brand, 3 features, pricing section, animations |
+| Landing page (HTML) | Local: `html.websites/COMPLETE_PRODUCT/finalized_products/main_landing_page.html` | **Complete** — ALSflow brand, 3 features, pricing, contact form popup (6 CTAs), animations. Body copy still needs finalising. |
+| Privacy policy page | Local: `html.websites/COMPLETE_PRODUCT/finalized_products/ochrana_dat.html` | **Complete** — GDPR-compliant, 8 sections, linked from form + footer. Add IČO when registered. |
 | PDF → Excel n8n workflow | `modelsals482-ops/Test-claude` repo | Built and deployed |
 | Czech competitor analysis | `competition/competitors.md` | Complete |
 | Business/financial learning | Learning Tracker section below | Ongoing |
 | Budget / pricing spreadsheet | `Basic rozpocet.xlsx` in Firm_advisor dir | Complete — min/max scenarios, margins modelled |
+
+**Landing page contact form captures:** name, email, phone, business type, team size, service interest, pain point, optional message + GDPR consent. Submit triggers mailto:info@alsflow.cz as fallback. **TODO:** replace mailto with n8n webhook or Formspree endpoint for reliable lead capture.
 
 ---
 
@@ -224,6 +227,9 @@ We beat all three on price and convenience.
 
 - [x] Purchase alsflow.cz via Wedos.cz — DONE (2026-04-16)
 - [x] Set up info@alsflow.cz email via seznam.cz — DONE (2026-04-16). Domain email propagation pending — wait 24–48h before registering social accounts.
+- [x] Build landing page with contact form and privacy policy — DONE (2026-04-16)
+- [ ] Wire contact form to real endpoint (n8n webhook or Formspree) — currently falls back to mailto
+- [ ] Add IČO to ochrana_dat.html once registered as OSVČ
 - [ ] Upgrade to Google Workspace (info@alsflow.cz) at first paying client
 - [ ] Finalise landing page body copy — outcome-focused, one target client in mind
 - [ ] Build cold email sequence (3–5 emails: problem → solution → demo → CTA)
@@ -260,9 +266,9 @@ Topics mastered so far (mark at 3 correct applications):
 
 ### Competitive Analysis
 - [ ] Porter's Five Forces — competitive pressure from all directions (0/3)
+- [ ] Differentiation vs. cost leadership — which strategy you are pursuing (0/3)
 - [ ] Competitor positioning map — plot rivals on price vs. value axes (0/3)
 - [ ] Win/loss analysis — why you win deals, why you lose them (0/3)
-- [ ] Differentiation vs. cost leadership — which strategy you are pursuing (0/3)
 
 ### Financial Analysis
 - [ ] Income statement basics — revenue, COGS, gross profit, EBITDA, net income (0/3)
