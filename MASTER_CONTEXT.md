@@ -1,6 +1,6 @@
 # Claude Master Context — AI Automation MSP
 _Read this at the start of every session to restore full context._
-_Last updated: 2026-04-15_
+_Last updated: 2026-04-16_
 
 ---
 
@@ -98,8 +98,8 @@ This is the single source of truth for any Claude session — business, technica
 **Personality words:** Practical · Transparent · Outcome-first · Personal · No-jargon
 
 **Business name: ALSflow (decided ✓)**
-- Domain: **alsflow.cz** — purchase via Wedos.cz (~150–200 CZK/year)
-- Email: info@alsflow.cz via Cloudflare Email Routing (free forwarding to Gmail) → upgrade to Google Workspace (~€6/month) at first paying client
+- Domain: **alsflow.cz** — purchased via Wedos.cz ✓ (2026-04-16)
+- Email: **info@alsflow.cz** set up via seznam.cz ✓ (2026-04-16) — domain email propagation pending. Use info@alsflow.cz for all social media registrations once propagation completes (24–48h). Upgrade to Google Workspace (~€6/month) at first paying client.
 
 **Current landing page headline:**
 ```
@@ -222,12 +222,13 @@ We beat all three on price and convenience.
 
 ## 8. Open Questions to Resolve
 
-- [ ] Purchase alsflow.cz via Wedos.cz and set up Cloudflare Email Routing → info@alsflow.cz forwarding to Gmail
+- [x] Purchase alsflow.cz via Wedos.cz — DONE (2026-04-16)
+- [x] Set up info@alsflow.cz email via seznam.cz — DONE (2026-04-16). Domain email propagation pending — wait 24–48h before registering social accounts.
 - [ ] Upgrade to Google Workspace (info@alsflow.cz) at first paying client
 - [ ] Finalise landing page body copy — outcome-focused, one target client in mind
 - [ ] Build cold email sequence (3–5 emails: problem → solution → demo → CTA)
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
-- [ ] Set up Instagram account — first 3 posts planned
+- [ ] Set up Instagram account — first 3 posts planned (use info@alsflow.cz once email propagates)
 - [ ] Close first paying client (even at a discount — LTV justifies it)
 - [ ] Build error-alerting workflow for client monitoring
 
