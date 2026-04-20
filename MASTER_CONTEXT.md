@@ -254,8 +254,8 @@ Topics mastered so far (mark at 3 correct applications):
 ### Understanding Your Own Firm
 - [ ] Value Proposition Canvas — what you offer vs. customer pains/gains (0/3)
 - [ ] Business Model Canvas — full picture of how your firm operates (0/3)
-- [~] Unit Economics — CAC vs. LTV (2/3) ← *next correct use = LEARNED*
-- [~] Profit margins — gross margin vs. net margin (1/3)
+- [x] Unit Economics — CAC vs. LTV [LEARNED — 2026-04-20]
+- [~] Profit margins — gross margin vs. net margin (2/3)
 - [ ] Cash flow vs. profit — why a profitable firm can still go broke (0/3)
 
 ### Client Selection
