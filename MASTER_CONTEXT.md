@@ -1,6 +1,6 @@
 # Claude Master Context — AI Automation MSP
 _Read this at the start of every session to restore full context._
-_Last updated: 2026-04-16_
+_Last updated: 2026-04-20_
 
 ---
 
@@ -231,6 +231,8 @@ We beat all three on price and convenience.
 - [x] Build landing page with contact form and privacy policy — DONE (2026-04-16)
 - [x] Security-harden landing page (XSS in demo chat fixed, CSP frame-ancestors + X-Content-Type-Options + referrer policy meta tags added) — DONE (2026-04-16)
 - [x] Cold email sequence — 5 templates written and corrected in `AI_Suite_Emaily.docx` (brand: ALSflow, features: 24/7 WhatsApp/web booking, form references updated). Ready to personalise. DONE (2026-04-16)
+- [x] Set up Instagram account — DONE (2026-04-20)
+- [x] Set up LinkedIn page (connected to personal profile) — DONE (2026-04-20)
 - [ ] Wire contact form to real endpoint (n8n webhook or Formspree) — currently falls back to mailto
 - [ ] Add IČO to ochrana_dat.html once registered as OSVČ
 - [ ] Personalise and send cold emails to first 5 warm contacts (open `AI_Suite_Emaily.docx`, accept/review tracked changes, fill in [Jméno firmy] + specific observation per recipient)
@@ -239,7 +241,6 @@ We beat all three on price and convenience.
 - [ ] Upgrade to Google Workspace (info@alsflow.cz) at first paying client
 - [ ] Finalise landing page body copy — outcome-focused, one target client in mind
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
-- [ ] Set up Instagram account — first 3 posts planned (use info@alsflow.cz once email propagates)
 - [ ] Close first paying client (even at a discount — LTV justifies it)
 - [ ] Register as OSVČ (required for invoicing and adding IČO to privacy policy)
 - [ ] Build error-alerting workflow for client monitoring
