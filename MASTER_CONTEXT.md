@@ -100,7 +100,6 @@ This is the single source of truth for any Claude session — business, technica
 **Business name: ALSflow (decided ✓)**
 - Domain: **alsflow.cz** — purchased via Wedos.cz ✓ (2026-04-16)
 - Email: **info@alsflow.cz** set up via seznam.cz ✓ (2026-04-16)
-- Upgrade to Google Workspace (~€6/month) at first paying client.
 
 **Current landing page headline:**
 ```
@@ -192,7 +191,7 @@ We beat all three on price and convenience.
 | Project | Location | Status |
 |---|---|---|
 | AI Automation MSP — business build | This file / `final_plan.md` | Active — building first 10 clients |
-| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). GA4 added (G-CEX6XVFWD7). TODO: consent mode banner + wire contact form. |
+| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). GA4 added (G-CEX6XVFWD7). Consent Mode v2 + cookie banner added (2026-04-20). TODO: wire contact form. |
 | Privacy policy page | GitHub: `modelsals482-ops/app_deployment` → `ochrana_dat.html` | **Live** — GDPR-compliant, 8 sections. Add IČO when registered. |
 | Cold email sequence | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\AI_Suite_Emaily.docx` | **Complete** — 5 templates ready to personalise per contact. |
 | PDF → Excel n8n workflow | `modelsals482-ops/Test-claude` repo | Built and deployed |
@@ -206,6 +205,7 @@ We beat all three on price and convenience.
 - **Domain:** alsflow.cz via Wedos DNS — A record `76.76.21.21` + CNAME `www` → `16012d20c360ac1a.vercel-dns-017.com`
 - **Local path:** `C:\Users\Jakub\Desktop\html.websites\COMPLETE_PRODUCT\finalized_products\`
 - **Git note:** local branch is `master`, remote is `main` — always push with `git push origin HEAD:main --force`
+- **Security headers:** `vercel.json` in repo root — CSP, HSTS, X-Frame-Options, Permissions-Policy
 
 ---
 
@@ -217,7 +217,7 @@ We beat all three on price and convenience.
 | **Railway** | Hosting for n8n + Postgres (~€20/month, shared across clients) |
 | **Gemini / Google APIs** | AI layer powering client bots |
 | **Vercel** | Static site hosting for alsflow.cz (free tier, auto-deploy from GitHub) |
-| **Google Analytics** | GA4 property G-CEX6XVFWD7 — tracking landing page visits |
+| **Google Analytics** | GA4 property G-CEX6XVFWD7 — Consent Mode v2 active, cookie banner live |
 | **Obsidian** | Knowledge base, session memory, business notes |
 | **GitHub** | Version control, project docs |
 | **VS Code** | Editor |
@@ -244,11 +244,10 @@ We beat all three on price and convenience.
 - [x] Deploy alsflow.cz — DONE (2026-04-20) via Vercel + Wedos DNS
 - [x] Add llms.txt for AI discoverability — DONE (2026-04-20)
 - [x] Add Google Analytics — DONE (2026-04-20) G-CEX6XVFWD7 in index.html
-- [ ] Add GA4 Consent Mode v2 + cookie banner (required for EEA/GDPR — Google warning active)
+- [x] Add GA4 Consent Mode v2 + cookie banner — DONE (2026-04-20)
 - [ ] Wire contact form to real endpoint (n8n webhook or Formspree) — currently falls back to mailto
 - [ ] Add IČO to ochrana_dat.html once registered as OSVČ
 - [ ] Personalise and send cold emails to first 5 warm contacts
-- [ ] Upgrade to Google Workspace (info@alsflow.cz) at first paying client
 - [ ] Finalise landing page body copy — outcome-focused, one target client in mind
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
 - [ ] Close first paying client (even at a discount — LTV justifies it)
