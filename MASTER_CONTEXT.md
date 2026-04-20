@@ -99,7 +99,8 @@ This is the single source of truth for any Claude session — business, technica
 
 **Business name: ALSflow (decided ✓)**
 - Domain: **alsflow.cz** — purchased via Wedos.cz ✓ (2026-04-16)
-- Email: **info@alsflow.cz** set up via seznam.cz ✓ (2026-04-16) — domain email propagation pending. Use info@alsflow.cz for all social media registrations once propagation completes (24–48h). Upgrade to Google Workspace (~€6/month) at first paying client.
+- Email: **info@alsflow.cz** set up via seznam.cz ✓ (2026-04-16)
+- Upgrade to Google Workspace (~€6/month) at first paying client.
 
 **Current landing page headline:**
 ```
@@ -191,15 +192,22 @@ We beat all three on price and convenience.
 | Project | Location | Status |
 |---|---|---|
 | AI Automation MSP — business build | This file / `final_plan.md` | Active — building first 10 clients |
-| Landing page (HTML) | Local: `html.websites/COMPLETE_PRODUCT/finalized_products/main_landing_page.html` | **Complete** — ALSflow brand, 3 features, pricing, contact form popup (6 CTAs; text: "Chci svoji nabídku" / service-specific variants), XSS fix + CSP/X-Content-Type-Options security meta tags, animations. Body copy still needs finalising. |
-| Privacy policy page | Local: `html.websites/COMPLETE_PRODUCT/finalized_products/ochrana_dat.html` | **Complete** — GDPR-compliant, 8 sections, linked from form + footer. Add IČO when registered. |
-| Cold email sequence | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\AI_Suite_Emaily.docx` | **Complete** — 5 templates (cold outreach, follow-up, video demo, value add, post-form confirmation). Brand corrected to ALSflow, features updated, quiz → form references fixed. Tracked changes added. Ready to personalise per contact. |
+| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). ALSflow brand, 3 features, pricing, contact form popup, XSS fix + security meta tags, animations, llms.txt. Body copy still needs finalising. |
+| Privacy policy page | GitHub: `modelsals482-ops/app_deployment` → `ochrana_dat.html` | **Live** — GDPR-compliant, 8 sections. Add IČO when registered. |
+| Cold email sequence | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\AI_Suite_Emaily.docx` | **Complete** — 5 templates ready to personalise per contact. |
 | PDF → Excel n8n workflow | `modelsals482-ops/Test-claude` repo | Built and deployed |
 | Czech competitor analysis | `competition/competitors.md` | Complete |
 | Business/financial learning | Learning Tracker section below | Ongoing |
 | Budget / pricing spreadsheet | `Basic rozpocet.xlsx` in Firm_advisor dir | Complete — min/max scenarios, margins modelled |
 
-**Landing page contact form captures:** name, email, phone, business type, team size, service interest, pain point, optional message + GDPR consent. Submit triggers mailto:info@alsflow.cz as fallback. **TODO:** replace mailto with n8n webhook or Formspree endpoint for reliable lead capture.
+**Deployment stack:**
+- **GitHub repo:** `modelsals482-ops/app_deployment` (main branch) — website source files
+- **Hosting:** Vercel (free tier) — auto-deploys on every push to main
+- **Domain:** alsflow.cz via Wedos DNS — A record `76.76.21.21` + CNAME `www` → `16012d20c360ac1a.vercel-dns-017.com`
+- **Local path:** `C:\Users\Jakub\Desktop\html.websites\COMPLETE_PRODUCT\finalized_products\`
+
+**Landing page contact form:** currently falls back to mailto:info@alsflow.cz. **TODO:** replace with n8n webhook or Formspree endpoint.
+**Google Analytics:** TODO — Jakub needs to provide G-XXXXXXXXXX measurement ID to add tracking.
 
 ---
 
@@ -210,6 +218,7 @@ We beat all three on price and convenience.
 | **n8n** | Automation delivery platform — self-hosted on Railway |
 | **Railway** | Hosting for n8n + Postgres (~€20/month, shared across clients) |
 | **Gemini / Google APIs** | AI layer powering client bots |
+| **Vercel** | Static site hosting for alsflow.cz (free tier, auto-deploy from GitHub) |
 | **Obsidian** | Knowledge base, session memory, business notes (MCP-connected via `npx mcp-obsidian`, port 27124) |
 | **GitHub** | Version control, project docs (branch-per-feature workflow) |
 | **VS Code** | Editor (Python HTTP server on port 8000 for local file serving) |
@@ -227,17 +236,19 @@ We beat all three on price and convenience.
 ## 8. Open Questions to Resolve
 
 - [x] Purchase alsflow.cz via Wedos.cz — DONE (2026-04-16)
-- [x] Set up info@alsflow.cz email via seznam.cz — DONE (2026-04-16). Domain email propagation pending — wait 24–48h before registering social accounts.
+- [x] Set up info@alsflow.cz email via seznam.cz — DONE (2026-04-16)
 - [x] Build landing page with contact form and privacy policy — DONE (2026-04-16)
-- [x] Security-harden landing page (XSS in demo chat fixed, CSP frame-ancestors + X-Content-Type-Options + referrer policy meta tags added) — DONE (2026-04-16)
-- [x] Cold email sequence — 5 templates written and corrected in `AI_Suite_Emaily.docx` (brand: ALSflow, features: 24/7 WhatsApp/web booking, form references updated). Ready to personalise. DONE (2026-04-16)
+- [x] Security-harden landing page — DONE (2026-04-16)
+- [x] Cold email sequence — DONE (2026-04-16)
 - [x] Set up Instagram account — DONE (2026-04-20)
 - [x] Set up LinkedIn page (connected to personal profile) — DONE (2026-04-20)
+- [x] Deploy alsflow.cz — DONE (2026-04-20) via Vercel + Wedos DNS
+- [x] Add llms.txt for AI discoverability — DONE (2026-04-20)
+- [ ] Add Google Analytics — need G-XXXXXXXXXX measurement ID from Jakub
 - [ ] Wire contact form to real endpoint (n8n webhook or Formspree) — currently falls back to mailto
 - [ ] Add IČO to ochrana_dat.html once registered as OSVČ
-- [ ] Personalise and send cold emails to first 5 warm contacts (open `AI_Suite_Emaily.docx`, accept/review tracked changes, fill in [Jméno firmy] + specific observation per recipient)
-- [ ] Deploy alsflow.cz (Cloudflare Pages or Netlify — free, auto HTTPS; connect domain via DNS at Wedos)
-- [ ] Add Google Analytics or Plausible to landing page (track CTA clicks + form submits before first client)
+- [ ] Personalise and send cold emails to first 5 warm contacts
+- [ ] Add Google Analytics or Plausible to landing page
 - [ ] Upgrade to Google Workspace (info@alsflow.cz) at first paying client
 - [ ] Finalise landing page body copy — outcome-focused, one target client in mind
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
@@ -320,7 +331,8 @@ Topics mastered so far (mark at 3 correct applications):
 
 ## 11. Git & Repo Conventions
 
-- **This repo:** `modelsals482-ops/financial_advisor`
+- **Business context repo:** `modelsals482-ops/financial_advisor`
+- **Website repo:** `modelsals482-ops/app_deployment` (deploys to Vercel → alsflow.cz)
 - **Active branch:** `claude/update-docs-cleanup-CPade`
 - **Never push to `main` directly**
 - **Gitignored (credentials):** `.claude/settings.json`, `.claude/settings.local.json`
