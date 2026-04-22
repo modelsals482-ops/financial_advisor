@@ -193,9 +193,10 @@ We beat all three on price and convenience.
 | Project | Location | Status |
 |---|---|---|
 | AI Automation MSP — business build | This file / `final_plan.md` | Active — building first 10 clients |
-| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). GA4 added (G-CEX6XVFWD7). Consent Mode v2 + cookie banner added (2026-04-20). Copy improved 2026-04-22 (outcome-focused hero sub, 80% gross margin stat removed from customer view, get-started and built-for sections sharpened). TODO: wire contact form. |
+| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). GA4 added. Consent Mode v2 + cookie banner. Copy improved 2026-04-22 (outcome-focused hero sub, 80% gross margin stat removed). TODO: wire contact form. |
 | Privacy policy page | GitHub: `modelsals482-ops/app_deployment` → `ochrana_dat.html` | **Live** — GDPR-compliant, 8 sections. Add IČO when registered. |
 | Cold email sequence | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\AI_Suite_Emaily.docx` | **Complete** — 5 templates ready to personalise per contact. |
+| Faktura template | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\faktura_sablona.html` | **Complete** — open in browser, print to PDF. Fill IČO + IBAN after registration. |
 | PDF → Excel n8n workflow | `modelsals482-ops/Test-claude` repo | Built and deployed |
 | Czech competitor analysis | `competition/competitors.md` | Complete |
 | Business/financial learning | Learning Tracker section below | Ongoing |
@@ -248,11 +249,13 @@ We beat all three on price and convenience.
 - [x] Add Google Analytics — DONE (2026-04-20) G-CEX6XVFWD7 in index.html
 - [x] Add GA4 Consent Mode v2 + cookie banner — DONE (2026-04-20)
 - [x] Finalise landing page body copy — outcome-focused — DONE (2026-04-22)
+- [x] Build faktura template — DONE (2026-04-22) at `faktura_sablona.html`
 - [ ] Wire contact form to real endpoint (n8n webhook or Formspree) — currently falls back to mailto
-- [ ] Add IČO to ochrana_dat.html once registered as OSVČ
+- [ ] Add IČO to ochrana_dat.html + faktura_sablona.html once registered as OSVČ
 - [ ] Register as OSVČ — živnostenský list (1,000 CZK, one trip to živnostenský úřad)
 - [ ] Open Fio bank account for business income (free, separate from personal)
 - [ ] Notify ČSSZ + health insurer within 8 days of first invoice (vedlejší OSVČ)
+- [ ] Add to client contract: setup fee paid before work begins + monthly auto-payment on the 1st
 - [ ] Personalise and send cold emails to first 5 warm contacts
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
 - [ ] Close first paying client (even at a discount — LTV justifies it)
@@ -269,7 +272,7 @@ Topics mastered so far (mark at 3 correct applications):
 - [ ] Business Model Canvas — full picture of how your firm operates (0/3)
 - [x] Unit Economics — CAC vs. LTV [LEARNED — 2026-04-20]
 - [x] Profit margins — gross margin vs. net margin [LEARNED — 2026-04-22]
-- [ ] Cash flow vs. profit — why a profitable firm can still go broke (0/3)
+- [x] Cash flow vs. profit — why a profitable firm can still go broke [LEARNED — 2026-04-22]
 
 ### Client Selection
 - [~] ICP (Ideal Customer Profile) — defining who your best client looks like (0/3) — not yet finalised, revisit after first clients
@@ -301,6 +304,7 @@ Topics mastered so far (mark at 3 correct applications):
 - [x] OSVČ structure — vedlejší vs. hlavní, živnostenský list, IČO, DIČ [LEARNED — 2026-04-22]
 - [x] Czech income tax — výdajový pausál (60%), slevy (poplatník 30,840 + student 4,020), 15% rate [LEARNED — 2026-04-22]
 - [x] Paušální daň — 3 pásma, when it makes sense vs. výdajový pausál (not worth it until ~1M+ CZK revenue as vedlejší student) [LEARNED — 2026-04-22]
+- [x] Cash flow management — payment terms, upfront setup fee, auto-payment contracts [LEARNED — 2026-04-22]
 - [ ] VAT (DPH) — registration threshold, when to register, invoicing rules (0/3)
 - [ ] Invoicing as OSVČ — required fields on faktura, numbering, record-keeping (0/3)
 
