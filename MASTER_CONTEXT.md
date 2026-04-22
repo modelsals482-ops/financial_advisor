@@ -103,21 +103,30 @@ This is the single source of truth for any Claude session — business, technica
 - Domain: **alsflow.cz** — purchased via Wedos.cz ✓ (2026-04-16)
 - Email: **info@alsflow.cz** set up via seznam.cz ✓ (2026-04-16)
 
+**Positioning statement:**
+> For Czech appointment-based small businesses who lose bookings because they can't pick up the phone while working, ALSflow is a managed AI service that handles their emails and calendar 24/7 — fully set up and run for them. Unlike hiring a receptionist, we cost 70% less and never call in sick.
+
+**Key differentiator:** Hyper-specialisation in appointment booking for Czech local service businesses. šéfbot.cz serves e-shops and sales funnels — we don't. That's the moat.
+
 **Current landing page headline:**
 ```
 VÁŠ E-MAIL.
 VÁŠ KALENDÁŘ.
 VÁŠ AI.
 ```
-*(Translation: YOUR EMAIL. YOUR CALENDAR. YOUR AI.)*
 
-**Target value proposition framing (outcome-first):**
-> *"Váš telefon zvoní, vy jste u zákazníka. AI odpoví, termín zarezervuje, připomínku pošle."*
+**Hero sub (updated 2026-04-22):**
+> *"Váš telefon zvoní, vy jste u zákazníka. AI odpoví, termín zarezervuje, připomínku pošle. Vy nastavení neřešíte — my se postaráme o vše."*
 
 **Positioning vs. competitors:**
 - Cheap tools (talabot, odpovidej): self-serve, no support — we win on managed + personal service
 - Expensive managed services (šéfbot.cz, bezvabot.cz 20,000 CZK/month): priced out of small business — we win on price and focus
 - Hiring a receptionist (15,000–25,000 CZK/month): we win on cost and 24/7 availability
+- Reservio/Bookio: passive booking pages — client must find it and book themselves. We handle the conversation.
+
+**Objection handlers:**
+- Reservio objection: "Reservio is passive — client must find it and book. We handle the back-and-forth while you're busy."
+- šéfbot.cz objection: "They serve e-shops and recruiters. We only work with appointment-based service businesses — the product fits your exact problem."
 
 ---
 
@@ -133,42 +142,7 @@ VÁŠ AI.
 | Reservio / Bookio | Indirect | Booking SaaS — no AI, client must book themselves |
 | Hiring a receptionist | Indirect | 15,000–25,000 CZK/month — we are cheaper and 24/7 |
 
-**The gap:** Nobody in Prague serves small appointment-based businesses (vets, dentists, salons) with a managed, affordable, Czech-language AI assistant.
-
-**Edge over šéfbot.cz (main threat):**
-- They focus on lead gen and sales funnels, not service booking
-- No visible hyper-focus on local service businesses
-- No public pricing = self-qualification friction for small clients
-- We can be more personal, local, and sharply focused
-
-**To research further:**
-- [ ] šéfbot.cz actual pricing — call or email for a quote
-- [ ] Whether any competitor specifically targets vet/medical clinics
-- [ ] Reservio / Bookio pricing as indirect baseline
-- [ ] coworkers.ai — appeared in search, worth reviewing
-
 **Full detailed profiles:** see `competition/competitors.md`
-
-### Detailed Competitor Profiles
-
-#### šéfbot.cz — HIGHEST THREAT
-**Location:** Praha, Smíchov | **Clients:** 400+ | **Model:** Full managed service (same as us)
-**Pricing:** Not public — "free solution proposal" entry point | **Tech:** DeepSeek
-**Focus:** Lead gen, sales funnels, e-shops, recruitment — NOT local service booking
-**Our edge:** No focus on vets/dentists/salons, no public pricing, we're more personal and hyper-focused
-
-#### bezvabot.cz — MEDIUM THREAT
-**Pricing:** ~20,000 CZK/month | **Does:** Appointment booking, Czech language
-**Our edge:** 20,000 CZK/month is unaffordable for a solo vet — we can undercut massively and stay profitable
-
-#### apertia.ai — LOW THREAT
-**Target:** Medium/large companies, ERP/CRM, 100+ enterprise clients — completely different segment
-
-#### talabot.cz — LOW THREAT
-**Pricing:** From 399 CZK/month self-serve | **Target:** E-commerce only, not service businesses
-
-#### BC4 / businesscom.cz — LOW THREAT
-**Target:** Enterprise contact centers — irrelevant for small local businesses
 
 ### Market Pricing Intelligence
 
@@ -179,13 +153,6 @@ VÁŠ AI.
 | 20,000 CZK/month | bezvabot — medium businesses |
 | 65,000–100,000+ CZK setup | Enterprise custom builds |
 
-### The Real Competition (from a client's perspective)
-1. **Doing nothing** — missing calls, losing bookings
-2. **Hiring a part-time receptionist** — 15,000–25,000 CZK/month
-3. **A basic booking SaaS** (Reservio, Bookio) — no AI, client must book themselves
-
-We beat all three on price and convenience.
-
 ---
 
 ## 6. Active Projects
@@ -193,22 +160,21 @@ We beat all three on price and convenience.
 | Project | Location | Status |
 |---|---|---|
 | AI Automation MSP — business build | This file / `final_plan.md` | Active — building first 10 clients |
-| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). GA4 added. Consent Mode v2 + cookie banner. Copy improved 2026-04-22 (outcome-focused hero sub, 80% gross margin stat removed). TODO: wire contact form. |
-| Privacy policy page | GitHub: `modelsals482-ops/app_deployment` → `ochrana_dat.html` | **Live** — GDPR-compliant, 8 sections. Add IČO when registered. |
-| Cold email sequence | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\AI_Suite_Emaily.docx` | **Complete** — 5 templates ready to personalise per contact. |
+| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). GA4 + Consent Mode v2 + cookie banner. Copy improved 2026-04-22. TODO: wire contact form. |
+| Privacy policy page | GitHub: `modelsals482-ops/app_deployment` → `ochrana_dat.html` | **Live** — add IČO when registered. |
+| Cold email sequence | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\AI_Suite_Emaily.docx` | **Complete** — 5 templates ready to personalise. |
 | Faktura template | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\faktura_sablona.html` | **Complete** — open in browser, print to PDF. Fill IČO + IBAN after registration. |
 | PDF → Excel n8n workflow | `modelsals482-ops/Test-claude` repo | Built and deployed |
 | Czech competitor analysis | `competition/competitors.md` | Complete |
 | Business/financial learning | Learning Tracker section below | Ongoing |
-| Budget / pricing spreadsheet | `Basic rozpocet.xlsx` in Firm_advisor dir | Complete — min/max scenarios, margins modelled |
+| Budget / pricing spreadsheet | `Basic rozpocet.xlsx` in Firm_advisor dir | Complete |
 
 **Deployment stack:**
-- **GitHub repo:** `modelsals482-ops/app_deployment` (main branch) — website source files
+- **GitHub repo:** `modelsals482-ops/app_deployment` (main branch)
 - **Hosting:** Vercel (free tier) — auto-deploys on every push to main
 - **Domain:** alsflow.cz via Wedos DNS — A record `76.76.21.21` + CNAME `www` → `16012d20c360ac1a.vercel-dns-017.com`
 - **Local path:** `C:\Users\Jakub\Desktop\html.websites\COMPLETE_PRODUCT\finalized_products\`
-- **Git note:** local branch is `master`, remote is `main` — always push with `git push origin HEAD:main --force`
-- **Security headers:** `vercel.json` in repo root — CSP, HSTS, X-Frame-Options, Permissions-Policy
+- **Git note:** local branch is `master`, remote is `main` — push with `git push origin HEAD:main --force`
 
 ---
 
@@ -223,9 +189,7 @@ We beat all three on price and convenience.
 | **Google Analytics** | GA4 property G-CEX6XVFWD7 — Consent Mode v2 active, cookie banner live |
 | **Obsidian** | Knowledge base, session memory, business notes |
 | **GitHub** | Version control, project docs |
-| **VS Code** | Editor |
 | **Claude Code** | Primary AI coding + business assistant (CLI) |
-| **WhatsApp / Custom frontend** | Client-facing delivery channel for bots |
 
 **n8n MCP notes (critical):**
 - `create_workflow_from_code` is broken — always creates empty workflows. Write JSON directly into the workflow file and have the user import manually.
@@ -237,54 +201,51 @@ We beat all three on price and convenience.
 
 ## 8. Open Questions to Resolve
 
-- [x] Purchase alsflow.cz via Wedos.cz — DONE (2026-04-16)
-- [x] Set up info@alsflow.cz email via seznam.cz — DONE (2026-04-16)
+- [x] Purchase alsflow.cz — DONE (2026-04-16)
+- [x] Set up info@alsflow.cz — DONE (2026-04-16)
 - [x] Build landing page with contact form and privacy policy — DONE (2026-04-16)
 - [x] Security-harden landing page — DONE (2026-04-16)
 - [x] Cold email sequence — DONE (2026-04-16)
 - [x] Set up Instagram account — DONE (2026-04-20)
-- [x] Set up LinkedIn page (connected to personal profile) — DONE (2026-04-20)
-- [x] Deploy alsflow.cz — DONE (2026-04-20) via Vercel + Wedos DNS
-- [x] Add llms.txt for AI discoverability — DONE (2026-04-20)
-- [x] Add Google Analytics — DONE (2026-04-20) G-CEX6XVFWD7 in index.html
-- [x] Add GA4 Consent Mode v2 + cookie banner — DONE (2026-04-20)
-- [x] Finalise landing page body copy — outcome-focused — DONE (2026-04-22)
-- [x] Build faktura template — DONE (2026-04-22) at `faktura_sablona.html`
-- [ ] Wire contact form to real endpoint (n8n webhook or Formspree) — currently falls back to mailto
-- [ ] Add IČO to ochrana_dat.html + faktura_sablona.html once registered as OSVČ
+- [x] Set up LinkedIn page — DONE (2026-04-20)
+- [x] Deploy alsflow.cz — DONE (2026-04-20)
+- [x] Add llms.txt — DONE (2026-04-20)
+- [x] Add Google Analytics + Consent Mode v2 + cookie banner — DONE (2026-04-20)
+- [x] Finalise landing page body copy — DONE (2026-04-22)
+- [x] Build faktura template — DONE (2026-04-22)
+- [ ] Wire contact form to real endpoint (n8n webhook or Formspree)
+- [ ] Add IČO to ochrana_dat.html + faktura_sablona.html once registered
 - [ ] Register as OSVČ — živnostenský list (1,000 CZK, one trip to živnostenský úřad)
-- [ ] Open Fio bank account for business income (free, separate from personal)
-- [ ] Notify ČSSZ + health insurer within 8 days of first invoice (vedlejší OSVČ)
+- [ ] Open Fio bank account for business income
+- [ ] Notify ČSSZ + health insurer within 8 days of first invoice
 - [ ] Add to client contract: setup fee paid before work begins + monthly auto-payment on the 1st
 - [ ] Personalise and send cold emails to first 5 warm contacts
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
-- [ ] Close first paying client (even at a discount — LTV justifies it)
+- [ ] Close first paying client
 - [ ] Build error-alerting workflow for client monitoring
 
 ---
 
 ## 9. Business & Financial Learning Tracker
 
-Topics mastered so far (mark at 3 correct applications):
-
 ### Understanding Your Own Firm
-- [~] Value Proposition Canvas — what you offer vs. customer pains/gains (1/3) — introduced 2026-04-22
+- [x] Value Proposition Canvas — what you offer vs. customer pains/gains [LEARNED — 2026-04-22]
 - [ ] Business Model Canvas — full picture of how your firm operates (0/3)
 - [x] Unit Economics — CAC vs. LTV [LEARNED — 2026-04-20]
 - [x] Profit margins — gross margin vs. net margin [LEARNED — 2026-04-22]
 - [x] Cash flow vs. profit — why a profitable firm can still go broke [LEARNED — 2026-04-22]
 
 ### Client Selection
-- [~] ICP (Ideal Customer Profile) — defining who your best client looks like (0/3) — not yet finalised, revisit after first clients
+- [~] ICP (Ideal Customer Profile) — defining who your best client looks like (0/3) — revisit after first clients
 - [ ] TAM / SAM / SOM — sizing your total market vs. realistic target (0/3)
 - [ ] RFM Analysis — ranking clients by Recency, Frequency, Monetary value (0/3)
-- [~] Jobs to Be Done (JTBD) — what "job" does your client hire you to do? (1/3) — introduced 2026-04-22
-- [ ] Lead qualification: BANT — Budget, Authority, Need, Timeline (0/3)
+- [x] Jobs to Be Done (JTBD) — what "job" does your client hire you to do? [LEARNED — 2026-04-22]
+- [x] Lead qualification: BANT — Budget, Authority, Need, Timeline [LEARNED — 2026-04-22]
 
 ### Segmentation & Approach
 - [ ] Market segmentation — by size, industry, maturity, behavior (0/3)
 - [ ] Ansoff Matrix — grow via existing/new clients × existing/new products (0/3)
-- [ ] Positioning — how you are perceived vs. competitors (0/3)
+- [x] Positioning — how you are perceived vs. competitors [LEARNED — 2026-04-22]
 - [ ] Sales motion differences — SMB vs. mid-market vs. enterprise (0/3)
 
 ### Competitive Analysis
@@ -297,13 +258,13 @@ Topics mastered so far (mark at 3 correct applications):
 - [ ] Income statement basics — revenue, COGS, gross profit, EBITDA, net income (0/3)
 - [ ] Balance sheet basics — assets, liabilities, equity (0/3)
 - [ ] Key ratios — current ratio, debt/equity, ROE, ROA (0/3)
-- [x] Break-even analysis — how much you need to sell to cover costs [LEARNED]
+- [x] Break-even analysis [LEARNED — 2026-04-20]
 - [ ] Pricing strategy — cost-plus vs. value-based vs. competitive pricing (0/3)
 
 ### Czech Business & Tax (practical)
 - [x] OSVČ structure — vedlejší vs. hlavní, živnostenský list, IČO, DIČ [LEARNED — 2026-04-22]
-- [x] Czech income tax — výdajový pausál (60%), slevy (poplatník 30,840 + student 4,020), 15% rate [LEARNED — 2026-04-22]
-- [x] Paušální daň — 3 pásma, when it makes sense vs. výdajový pausál (not worth it until ~1M+ CZK revenue as vedlejší student) [LEARNED — 2026-04-22]
+- [x] Czech income tax — výdajový pausál (60%), slevy, 15% rate [LEARNED — 2026-04-22]
+- [x] Paušální daň — 3 pásma, when it makes sense (not until ~1M+ CZK as vedlejší student) [LEARNED — 2026-04-22]
 - [x] Cash flow management — payment terms, upfront setup fee, auto-payment contracts [LEARNED — 2026-04-22]
 - [ ] VAT (DPH) — registration threshold, when to register, invoicing rules (0/3)
 - [ ] Invoicing as OSVČ — required fields on faktura, numbering, record-keeping (0/3)
@@ -349,4 +310,3 @@ Topics mastered so far (mark at 3 correct applications):
 - **Never push to `main` directly**
 - **Website git note:** local branch is `master`, remote is `main` — push with `git push origin HEAD:main --force`
 - **Gitignored (credentials):** `.claude/settings.json`, `.claude/settings.local.json`
-- **Allowed pre-approved commands:** see `.claude/settings.local.json` (local disk only)
