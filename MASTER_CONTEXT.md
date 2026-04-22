@@ -1,6 +1,6 @@
 # Claude Master Context — AI Automation MSP
 _Read this at the start of every session to restore full context._
-_Last updated: 2026-04-20_
+_Last updated: 2026-04-22_
 
 ---
 
@@ -82,6 +82,8 @@ This is the single source of truth for any Claude session — business, technica
 
 **Shared ICP characteristic:** Owner wears many hats, limited time, not technical, misses bookings due to missed calls or slow email replies.
 
+**ICP not yet finalised** — keeping broad for now. Revisit when first 2–3 clients are onboarded to see which vertical converts best.
+
 **Acquisition channels:**
 | Client type | Channel |
 |---|---|
@@ -110,7 +112,7 @@ VÁŠ AI.
 *(Translation: YOUR EMAIL. YOUR CALENDAR. YOUR AI.)*
 
 **Target value proposition framing (outcome-first):**
-> *"Automate your emails and customer replies so you can focus on the work that actually pays."*
+> *"Váš telefon zvoní, vy jste u zákazníka. AI odpoví, termín zarezervuje, připomínku pošle."*
 
 **Positioning vs. competitors:**
 - Cheap tools (talabot, odpovidej): self-serve, no support — we win on managed + personal service
@@ -191,7 +193,7 @@ We beat all three on price and convenience.
 | Project | Location | Status |
 |---|---|---|
 | AI Automation MSP — business build | This file / `final_plan.md` | Active — building first 10 clients |
-| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). GA4 added (G-CEX6XVFWD7). Consent Mode v2 + cookie banner added (2026-04-20). TODO: wire contact form. |
+| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). GA4 added (G-CEX6XVFWD7). Consent Mode v2 + cookie banner added (2026-04-20). Copy improved 2026-04-22 (outcome-focused hero sub, 80% gross margin stat removed from customer view, get-started and built-for sections sharpened). TODO: wire contact form. |
 | Privacy policy page | GitHub: `modelsals482-ops/app_deployment` → `ochrana_dat.html` | **Live** — GDPR-compliant, 8 sections. Add IČO when registered. |
 | Cold email sequence | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\AI_Suite_Emaily.docx` | **Complete** — 5 templates ready to personalise per contact. |
 | PDF → Excel n8n workflow | `modelsals482-ops/Test-claude` repo | Built and deployed |
@@ -245,13 +247,15 @@ We beat all three on price and convenience.
 - [x] Add llms.txt for AI discoverability — DONE (2026-04-20)
 - [x] Add Google Analytics — DONE (2026-04-20) G-CEX6XVFWD7 in index.html
 - [x] Add GA4 Consent Mode v2 + cookie banner — DONE (2026-04-20)
+- [x] Finalise landing page body copy — outcome-focused — DONE (2026-04-22)
 - [ ] Wire contact form to real endpoint (n8n webhook or Formspree) — currently falls back to mailto
 - [ ] Add IČO to ochrana_dat.html once registered as OSVČ
+- [ ] Register as OSVČ — živnostenský list (1,000 CZK, one trip to živnostenský úřad)
+- [ ] Open Fio bank account for business income (free, separate from personal)
+- [ ] Notify ČSSZ + health insurer within 8 days of first invoice (vedlejší OSVČ)
 - [ ] Personalise and send cold emails to first 5 warm contacts
-- [ ] Finalise landing page body copy — outcome-focused, one target client in mind
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
 - [ ] Close first paying client (even at a discount — LTV justifies it)
-- [ ] Register as OSVČ (required for invoicing and adding IČO to privacy policy)
 - [ ] Build error-alerting workflow for client monitoring
 
 ---
@@ -261,17 +265,17 @@ We beat all three on price and convenience.
 Topics mastered so far (mark at 3 correct applications):
 
 ### Understanding Your Own Firm
-- [ ] Value Proposition Canvas — what you offer vs. customer pains/gains (0/3)
+- [~] Value Proposition Canvas — what you offer vs. customer pains/gains (1/3) — introduced 2026-04-22
 - [ ] Business Model Canvas — full picture of how your firm operates (0/3)
 - [x] Unit Economics — CAC vs. LTV [LEARNED — 2026-04-20]
-- [~] Profit margins — gross margin vs. net margin (2/3)
+- [x] Profit margins — gross margin vs. net margin [LEARNED — 2026-04-22]
 - [ ] Cash flow vs. profit — why a profitable firm can still go broke (0/3)
 
 ### Client Selection
-- [ ] ICP (Ideal Customer Profile) — defining who your best client looks like (0/3)
+- [~] ICP (Ideal Customer Profile) — defining who your best client looks like (0/3) — not yet finalised, revisit after first clients
 - [ ] TAM / SAM / SOM — sizing your total market vs. realistic target (0/3)
 - [ ] RFM Analysis — ranking clients by Recency, Frequency, Monetary value (0/3)
-- [ ] Jobs to Be Done (JTBD) — what "job" does your client hire you to do? (0/3)
+- [~] Jobs to Be Done (JTBD) — what "job" does your client hire you to do? (1/3) — introduced 2026-04-22
 - [ ] Lead qualification: BANT — Budget, Authority, Need, Timeline (0/3)
 
 ### Segmentation & Approach
@@ -292,6 +296,13 @@ Topics mastered so far (mark at 3 correct applications):
 - [ ] Key ratios — current ratio, debt/equity, ROE, ROA (0/3)
 - [x] Break-even analysis — how much you need to sell to cover costs [LEARNED]
 - [ ] Pricing strategy — cost-plus vs. value-based vs. competitive pricing (0/3)
+
+### Czech Business & Tax (practical)
+- [x] OSVČ structure — vedlejší vs. hlavní, živnostenský list, IČO, DIČ [LEARNED — 2026-04-22]
+- [x] Czech income tax — výdajový pausál (60%), slevy (poplatník 30,840 + student 4,020), 15% rate [LEARNED — 2026-04-22]
+- [x] Paušální daň — 3 pásma, when it makes sense vs. výdajový pausál (not worth it until ~1M+ CZK revenue as vedlejší student) [LEARNED — 2026-04-22]
+- [ ] VAT (DPH) — registration threshold, when to register, invoicing rules (0/3)
+- [ ] Invoicing as OSVČ — required fields on faktura, numbering, record-keeping (0/3)
 
 **Recommended books (priority order):**
 1. *The Mom Test* — Rob Fitzpatrick
