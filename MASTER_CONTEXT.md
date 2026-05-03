@@ -1,6 +1,6 @@
 # Claude Master Context — AI Automation MSP
 _Read this at the start of every session to restore full context._
-_Last updated: 2026-04-22_
+_Last updated: 2026-05-03_
 
 ---
 
@@ -160,7 +160,7 @@ VÁŠ AI.
 | Project | Location | Status |
 |---|---|---|
 | AI Automation MSP — business build | This file / `final_plan.md` | Active — building first 10 clients |
-| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). GA4 + Consent Mode v2 + cookie banner. Copy improved 2026-04-22. TODO: wire contact form. |
+| Landing page (HTML) | GitHub: `modelsals482-ops/app_deployment` → `index.html` | **Live at alsflow.cz** — deployed via Vercel (2026-04-20). GA4 + Consent Mode v2 + cookie banner. Copy improved 2026-04-22. Contact form wired to n8n webhook. |
 | Privacy policy page | GitHub: `modelsals482-ops/app_deployment` → `ochrana_dat.html` | **Live** — add IČO when registered. |
 | Cold email sequence | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\AI_Suite_Emaily.docx` | **Complete** — 5 templates ready to personalise. |
 | Faktura template | Local: `C:\Users\Jakub\Desktop\Pracovni dokumenty\faktura_sablona.html` | **Complete** — open in browser, print to PDF. Fill IČO + IBAN after registration. |
@@ -168,6 +168,7 @@ VÁŠ AI.
 | Czech competitor analysis | `competition/competitors.md` | Complete |
 | Business/financial learning | Learning Tracker section below | Ongoing |
 | Budget / pricing spreadsheet | `Basic rozpocet.xlsx` in Firm_advisor dir | Complete |
+| Error-alerting workflow | n8n / Railway | **Complete** (2026-05-03) |
 
 **Deployment stack:**
 - **GitHub repo:** `modelsals482-ops/app_deployment` (main branch)
@@ -213,7 +214,8 @@ VÁŠ AI.
 - [x] Add Google Analytics + Consent Mode v2 + cookie banner — DONE (2026-04-20)
 - [x] Finalise landing page body copy — DONE (2026-04-22)
 - [x] Build faktura template — DONE (2026-04-22)
-- [ ] Wire contact form to real endpoint (n8n webhook or Formspree)
+- [x] Wire contact form to real endpoint (n8n webhook) — DONE (2026-05-03)
+- [x] Build error-alerting workflow for client monitoring — DONE (2026-05-03)
 - [ ] Add IČO to ochrana_dat.html + faktura_sablona.html once registered
 - [ ] Register as OSVČ — živnostenský list (1,000 CZK, one trip to živnostenský úřad)
 - [ ] Open Fio bank account for business income
@@ -222,7 +224,6 @@ VÁŠ AI.
 - [ ] Personalise and send cold emails to first 5 warm contacts
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
 - [ ] Close first paying client
-- [ ] Build error-alerting workflow for client monitoring
 
 ---
 
