@@ -169,6 +169,7 @@ VÁŠ AI.
 | Business/financial learning | Learning Tracker section below | Ongoing |
 | Budget / pricing spreadsheet | `Basic rozpocet.xlsx` in Firm_advisor dir | Complete |
 | Error-alerting workflow | n8n / Railway | **Complete** (2026-05-03) |
+| Client acquisition path playbook | `docs/client_acquisition_path.md` | **Complete** (2026-05-03) |
 
 **Deployment stack:**
 - **GitHub repo:** `modelsals482-ops/app_deployment` (main branch)
@@ -218,7 +219,7 @@ VÁŠ AI.
 - [x] Build error-alerting workflow for client monitoring — DONE (2026-05-03)
 - [ ] Add IČO to ochrana_dat.html + faktura_sablona.html once registered
 - [ ] Register as OSVČ — živnostenský list (1,000 CZK, one trip to živnostenský úřad)
-- [ ] Open Fio bank account for business income
+- [ ] Open Raiffeisen or ČSOB bank account for business income
 - [ ] Notify ČSSZ + health insurer within 8 days of first invoice
 - [ ] Add to client contract: setup fee paid before work begins + monthly auto-payment on the 1st
 - [ ] Personalise and send cold emails to first 5 warm contacts
