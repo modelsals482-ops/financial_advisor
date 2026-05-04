@@ -84,16 +84,14 @@ This is the single source of truth for any Claude session — business, technica
 
 **ICP refinement (2026-05-04):** Best-fit clients are time-poor AND have a positive attitude toward AI. This doesn't exclude others, but prioritise these when outreaching. Persona-specific UI is a real concern — a 60-year-old dentist and a 35-year-old physio need different UX. Do not design one generic interface for all.
 
-**ICP not yet finalised** — keeping broad for now. Revisit when first 2–3 clients are onboarded to see which vertical converts best.
+**STRATEGIC DECISION (2026-05-04) — ICP-first before outreach:**
+The current product is a generic booking bot — a solution looking for a problem. Do NOT pitch it as-is. Before any outreach:
+1. Pick ONE vertical
+2. Research it deeply: what does a bad day look like for this person? What does missing a booking actually cost them? Do clients book once or return repeatedly? What do they use today?
+3. Tailor the bot concept and pitch to that vertical's specific problems
+4. Then pitch
 
-**Acquisition channels:**
-| Client type | Channel |
-|---|---|
-| Local businesses | Instagram + WhatsApp demo |
-| Freelancers | LinkedIn + cold email |
-| Small firms | LinkedIn + cold email + referral |
-
-**Key rule on demos:** Never pretend the bot is human and reveal it later. Always lead with *"this is an AI assistant."* The demo sells itself — deception kills trust and violates EU compliance.
+"I have a booking bot" is not a pitch — it's a feature. Burning warm contacts with a generic offer before having a sharp, specific pitch is a mistake. ICP research comes before cold emails.
 
 ---
 
@@ -222,28 +220,34 @@ VÁŠ AI.
 - [x] Build faktura template — DONE (2026-04-22)
 - [x] Wire contact form to real endpoint (n8n webhook) — DONE (2026-05-03)
 - [x] Build error-alerting workflow for client monitoring — DONE (2026-05-03)
+- [ ] Register as OSVČ — živnostenský list (1,000 CZK, one trip to živnostenský úřad) — do in parallel with ICP research, doesn't require thinking
 - [ ] Add IČO to ochrana_dat.html + faktura_sablona.html once registered
-- [ ] Register as OSVČ — živnostenský list (1,000 CZK, one trip to živnostenský úřad)
 - [ ] Open Raiffeisen or ČSOB bank account for business income
 - [ ] Notify ČSSZ + health insurer within 8 days of first invoice
 - [ ] Add to client contract: setup fee paid before work begins + monthly auto-payment on the 1st
+
+**ICP & Vertical Research — do this before any outreach (added 2026-05-04):**
+- [ ] Pick ONE vertical to go deep on first
+- [ ] For that vertical: document what a bad day looks like, what missing a booking costs them, booking patterns (one-time vs recurring), client demographics, tools they use today
+- [ ] Every bot must solve that vertical's specific problem, not be a generic chatbot — define a per-vertical customisation checklist
+- [ ] Refine ICP: time-poor + AI-positive as primary qualifier; document persona-specific UI/UX requirements (35-year-old vs 60-year-old client needs different interface)
+- [ ] Explore what other use cases beyond booking exist for that vertical (upsell, follow-up, reminders, product recommendations)
+
+**Outreach — only after ICP research is done:**
 - [ ] Personalise and send cold emails to first 5 warm contacts
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
 - [ ] Close first paying client
 
-**Product & Strategy (added 2026-05-04):**
-- [ ] Explore use cases for AI secretary beyond current ICP verticals — map which other business types benefit most
-- [ ] Refine ICP further: time-poor + AI-positive as primary qualifier; document persona-specific UI/UX requirements (35-year-old vs 60-year-old client needs different interface)
-- [ ] Every bot must solve the client's specific problem, not be a generic chatbot — define a per-vertical customisation checklist
+**Product & Strategy:**
 - [ ] Define pricing model for recurring vs one-time appointment bots (recurring = more infra complexity = higher price)
-- [ ] Design add-on upsell module: bot recommends a product/service post-appointment with margin baked in
-- [ ] Prepare "Top 5 expected problems + solutions" trust-building document for client pitches
+- [ ] Design add-on upsell module: bot recommends product/service post-appointment with margin baked in
+- [ ] Prepare "Top 5 expected problems + solutions" trust-building document for client pitches (do after picking vertical)
 
-**Competition (added 2026-05-04):**
+**Competition:**
 - [ ] Competition research: Emmy's business — identify weak spots and where ALSflow can come in with a solution
 - [ ] Audit competitor bot weaknesses (šéfbot, talabot, others) — build positioning and pitch talking points around fixing those specific problems
 
-**Legal / Compliance (added 2026-05-04):**
+**Legal / Compliance:**
 - [ ] GDPR: document all data flows and server locations; ensure EU-only data residency (no US data transfer); prepare GDPR-compliant Data Processing Agreement (DPA) for clients
 - [ ] Research EU AI Act applicability to booking and communication bots in Czech Republic
 - [ ] Add data handling clause to client contract: specify where data goes, which servers, retention period, and client rights
