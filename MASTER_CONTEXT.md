@@ -1,6 +1,6 @@
 # Claude Master Context — AI Automation MSP
 _Read this at the start of every session to restore full context._
-_Last updated: 2026-05-03_
+_Last updated: 2026-05-04_
 
 ---
 
@@ -82,6 +82,8 @@ This is the single source of truth for any Claude session — business, technica
 
 **Shared ICP characteristic:** Owner wears many hats, limited time, not technical, misses bookings due to missed calls or slow email replies.
 
+**ICP refinement (2026-05-04):** Best-fit clients are time-poor AND have a positive attitude toward AI. This doesn't exclude others, but prioritise these when outreaching. Persona-specific UI is a real concern — a 60-year-old dentist and a 35-year-old physio need different UX. Do not design one generic interface for all.
+
 **ICP not yet finalised** — keeping broad for now. Revisit when first 2–3 clients are onboarded to see which vertical converts best.
 
 **Acquisition channels:**
@@ -144,6 +146,8 @@ VÁŠ AI.
 
 **Full detailed profiles:** see `competition/competitors.md`
 
+**Competition task (2026-05-04):** Research Emmy's business specifically — identify weak spots and where ALSflow can position as the fix.
+
 ### Market Pricing Intelligence
 
 | Price point | Who it serves |
@@ -170,6 +174,7 @@ VÁŠ AI.
 | Budget / pricing spreadsheet | `Basic rozpocet.xlsx` in Firm_advisor dir | Complete |
 | Error-alerting workflow | n8n / Railway | **Complete** (2026-05-03) |
 | Client acquisition path playbook | `docs/client_acquisition_path.md` | **Complete** (2026-05-03) |
+| n8n technical backlog | `docs/n8n_technical_backlog.md` | Active |
 
 **Deployment stack:**
 - **GitHub repo:** `modelsals482-ops/app_deployment` (main branch)
@@ -225,6 +230,30 @@ VÁŠ AI.
 - [ ] Personalise and send cold emails to first 5 warm contacts
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
 - [ ] Close first paying client
+
+**Product & Strategy (added 2026-05-04):**
+- [ ] Explore use cases for AI secretary beyond current ICP verticals — map which other business types benefit most
+- [ ] Refine ICP further: time-poor + AI-positive as primary qualifier; document persona-specific UI/UX requirements (35-year-old vs 60-year-old client needs different interface)
+- [ ] Every bot must solve the client's specific problem, not be a generic chatbot — define a per-vertical customisation checklist
+- [ ] Define pricing model for recurring vs one-time appointment bots (recurring = more infra complexity = higher price)
+- [ ] Design add-on upsell module: bot recommends a product/service post-appointment with margin baked in
+- [ ] Prepare "Top 5 expected problems + solutions" trust-building document for client pitches
+
+**Competition (added 2026-05-04):**
+- [ ] Competition research: Emmy's business — identify weak spots and where ALSflow can come in with a solution
+- [ ] Audit competitor bot weaknesses (šéfbot, talabot, others) — build positioning and pitch talking points around fixing those specific problems
+
+**Legal / Compliance (added 2026-05-04):**
+- [ ] GDPR: document all data flows and server locations; ensure EU-only data residency (no US data transfer); prepare GDPR-compliant Data Processing Agreement (DPA) for clients
+- [ ] Research EU AI Act applicability to booking and communication bots in Czech Republic
+- [ ] Add data handling clause to client contract: specify where data goes, which servers, retention period, and client rights
+- [ ] Ensure solving a client's problem doesn't create new ones — define explicit failure mode policies (dual bookings, undelivered messages, etc.)
+
+**Technical (see `docs/n8n_technical_backlog.md` for full specs):**
+- [ ] Edge case handling: dual/conflicting appointments, undelivered messages, booking failures — define how the bot handles each
+- [ ] Recurring vs one-time appointment infrastructure — design separate workflow variant for recurring bookings
+- [ ] Waitlist feature: when appointment cancelled, bot auto-notifies waitlisted clients to fill the slot
+- [ ] Landing page performance: audit animation weight, build lightweight version for slower devices/connections
 
 ---
 
