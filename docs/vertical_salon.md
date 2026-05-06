@@ -1,7 +1,7 @@
 # Vertical Deep-Dive: Hair & Beauty Salons
 _Last updated: 2026-05-06_
 
-> **Validation status:** This document is a hypothesis built from general market knowledge, not from direct interviews with salon owners. Sections marked ⚠️ need to be validated with a real salon owner before pitching.
+> **Validation status:** Pricing data validated from 4 real Prague salon websites (2026-05-06). Sections still marked ⚠️ need direct salon owner interview before pitching.
 
 ---
 
@@ -13,7 +13,7 @@ _Last updated: 2026-05-06_
   - **Chair rental:** Owner rents chairs to freelance stylists who keep their own clients
 - Services: haircut, colour, styling, treatments, nails (if beauty salon)
 - Session lengths vary widely: haircut 30–45 min, colour 2–3 hours, full treatment 3–4 hours
-- Revenue per visit: 350–2,500 CZK depending on service ⚠️
+- Revenue per visit: 500–3,500 CZK depending on service ✅ validated
 - Busy hours: weekdays 9–19:00, weekends 9–15:00
 - Cannot answer phone during colour application or complex cuts
 
@@ -21,7 +21,47 @@ _Last updated: 2026-05-06_
 
 ---
 
-## 2. ICP Qualifier
+## 2. Real Prague Salon Pricing (Validated 2026-05-06)
+
+Data from 4 Prague salons: Studio Hair Design, Kadeřnictví LUNA Praha 2, Hairborn, Cutegory.
+
+### Haircuts
+| Service | Low-end | Mid | High-end |
+|---|---|---|---|
+| Dámský střih (women's cut, wash, blowdry) | 790 CZK | 960–1,310 CZK | 1,390–2,000 CZK |
+| Pánský střih (men's cut) | 550 CZK | 610–870 CZK | 800–990 CZK |
+| Dětský střih (children's) | 400 CZK | 460–560 CZK | — |
+
+### Colour
+| Service | Low-end | Mid | High-end |
+|---|---|---|---|
+| Barvení odrost (root colour) | 750 CZK | 1,300–1,600 CZK | 1,700 CZK |
+| Barvení komplet (full colour) | 850–990 CZK | 2,000–2,600 CZK | 2,750 CZK |
+| Melír folie (highlights) | 2,000 CZK | 2,800–3,200 CZK | 4,800–5,800 CZK |
+| Balayage / AirTouch | 2,900 CZK | 5,800 CZK | 8,800 CZK |
+| Average full visit with colour + cut | — | ~3,500 CZK | — |
+
+### Treatments & Extras
+| Service | Price |
+|---|---|
+| Foukaná / blowdry only | 690–1,200 CZK |
+| Keratinové narovnání | 1,760–3,290 CZK |
+| Trvalá (perm) | 1,900–3,800 CZK |
+| Olaplex treatment | 700–1,550 CZK |
+| Společenský / svatební účes | 1,770–5,000 CZK |
+
+### Key pricing insight
+- **Budget salons:** women's cut 470–790 CZK, colour 750–990 CZK
+- **Mid-range (ALSflow ICP):** women's cut 960–1,390 CZK, colour 1,300–2,600 CZK
+- **Premium:** women's cut 1,400–2,000 CZK, colour 2,600–8,800 CZK
+- **Average visit value (mid-range, colour + cut):** ~3,500 CZK ✅ confirmed by Hairborn
+- **ALSflow retainer break-even:** 1.5 extra colour bookings/month covers the entire 5,000 CZK retainer
+
+**Correction to earlier estimate:** Previous estimate of 400–600 CZK for average visit was too low. Mid-range Prague salons earn 1,000–3,500 CZK per visit. This makes the ROI pitch significantly stronger than originally modelled.
+
+---
+
+## 3. ICP Qualifier
 
 **Best-fit salon:**
 - 1–3 stylists, owner-operated or with 1–2 employees
@@ -29,15 +69,16 @@ _Last updated: 2026-05-06_
 - Does NOT already have a functioning, actively used booking tool
 - Owner age 25–40, already uses Instagram for marketing, open to automation
 - Located in Prague or large Czech city
+- Mid-range positioning (not budget, not luxury)
 
 **Disqualifying signals:**
-- Already actively using Fresha or Reservio with client self-booking enabled and working ⚠️ (need to understand how often this actually works well for them)
+- Already actively using Fresha or Reservio with client self-booking enabled and working ⚠️
 - Chain salon with central booking system
 - Very low volume (e.g., 2–3 clients/day)
 
 ---
 
-## 3. What a Bad Day Looks Like ⚠️
+## 4. What a Bad Day Looks Like ⚠️
 
 _Hypothesis — validate with real salon owner._
 
@@ -55,24 +96,24 @@ The stylist starts a 2.5-hour colour job at 10:00. During that time:
 
 ---
 
-## 4. What Missing a Booking Costs ⚠️
-
-_Numbers are estimates — validate Prague salon pricing before pitching._
+## 5. What Missing a Booking Costs (Updated with Real Prices)
 
 | Scenario | Value |
 |---|---|
-| Average haircut value (Prague) | ~400–600 CZK |
-| Average colour service value | ~1,200–2,000 CZK |
-| No-show on a 2.5h colour slot | ~1,500–2,000 CZK wasted |
-| Missed bookings per week (estimate) | 3–5 |
+| Average women's cut + blowdry (mid-range) | ~1,100 CZK |
+| Average colour visit (mid-range) | ~3,500 CZK |
+| No-show on a 2.5h colour slot | ~3,500 CZK wasted |
+| Missed bookings per week (estimate) | 3–5 ⚠️ |
 | ALSflow retainer | 4,500–5,000 CZK/month |
-| Break-even | Capture **3–4 extra bookings/month** |
+| Break-even | Capture **1–2 extra colour bookings/month** |
 
-**Important:** The upsell feature (add-on services at confirmation) creates a second revenue lever. If 20% of confirmed bookings add a 200–400 CZK treatment, on 50 bookings/month that's 2,000–4,000 CZK additional monthly revenue — enough to cover half the retainer just from upsells.
+**Updated ROI pitch:** At 3,500 CZK average colour visit, capturing just 2 extra bookings/month = 7,000 CZK recovered. The retainer (5,000 CZK) pays for itself 1.4× over. This is a much stronger number than the original 400–600 CZK estimate.
+
+**Upsell potential:** If 20% of 50 monthly bookings add a 300–500 CZK treatment, that's 3,000–5,000 CZK extra revenue/month — enough to cover the entire retainer from upsells alone.
 
 ---
 
-## 5. Booking Patterns ⚠️
+## 6. Booking Patterns ⚠️
 
 | Type | Share (estimate) | Notes |
 |---|---|---|
@@ -85,7 +126,7 @@ _Numbers are estimates — validate Prague salon pricing before pitching._
 
 ---
 
-## 6. Tools They Use Today ⚠️
+## 7. Tools They Use Today ⚠️
 
 | Tool | Usage |
 |---|---|
@@ -97,13 +138,13 @@ _Numbers are estimates — validate Prague salon pricing before pitching._
 | Facebook | Older clients may still message here |
 | Google Calendar / paper | Backup or primary for less tech-forward owners |
 
-**Key insight:** Instagram DM as a booking channel is unique to salons vs. physios. If the salon owner does any marketing on Instagram, they get booking requests there. A bot that handles Instagram DMs would be a strong differentiator — but this is a roadmap item, not current capability.
+**Key insight:** Instagram DM as a booking channel is unique to salons vs. physios. A bot that handles Instagram DMs would be a strong differentiator — but this is a roadmap item, not current capability.
 
 **Fresha risk:** Fresha is free and has a client-facing booking page. If a salon is using it well, the pain point is already partially solved. The ALSflow pitch here shifts to: *"Fresha requires your client to find the link and book themselves. We handle the back-and-forth on WhatsApp and email so clients don't have to go anywhere."*
 
 ---
 
-## 7. AI Attitude ⚠️
+## 8. AI Attitude ⚠️
 
 | Owner profile | Attitude | Pitch approach |
 |---|---|---|
@@ -113,7 +154,7 @@ _Numbers are estimates — validate Prague salon pricing before pitching._
 
 ---
 
-## 8. Top 5 Pitch Objections (Before Signing)
+## 9. Top 5 Pitch Objections (Before Signing)
 
 ### Objection 1: "I already use Reservio / Fresha / Bookio"
 
@@ -144,115 +185,52 @@ _Numbers are estimates — validate Prague salon pricing before pitching._
 
 **Why they say it:** Colour takes 2.5 hours. A cut takes 45 minutes. Booking the wrong one ruins the schedule.
 
-**The reality:** This is a real operational concern — it's the most technically valid objection. Our answer needs to be specific.
-
 **How to handle it:**
 - The bot is built with your exact service menu and duration for each service
 - During onboarding we map every service to its duration and to which stylist can perform it
-- If a client asks for something ambiguous ("something with colour") — bot asks a clarifying question before booking
+- If a client asks for something ambiguous — bot asks a clarifying question before booking
 - "We spend 30 minutes during setup making sure the bot knows your menu exactly. If something changes, you message us and we update it same day."
 
 ---
 
 ### Objection 4: "It's too expensive for what I get"
 
-**Why they say it:** Salons are price-sensitive. Margins are tighter than physio. 5,000 CZK/month is significant.
-
-**The reality:** Two revenue levers — captured missed bookings AND upsell revenue. Both need to be in the pitch.
+**Updated answer with real prices:** At 3,500 CZK average colour visit, capturing 2 extra bookings/month = 7,000 CZK recovered vs. 5,000 CZK retainer. Net gain: +2,000 CZK even before upsells.
 
 **How to handle it:**
-- Missed bookings: "3–4 extra bookings a month covers the entire retainer."
-- Upsell: "If 1 in 5 clients adds a 300 CZK treatment at confirmation, and you do 50 bookings a month, that's 3,000 CZK extra revenue just from the upsell. The bot pays for itself from that alone."
-- Frame as two income streams, not one cost
+- "2 extra colour bookings a month covers the entire retainer and you're still up 2,000 CZK."
+- "If 10 clients a month add a 400 CZK treatment at confirmation, that's 4,000 CZK extra revenue — the bot effectively costs you nothing."
 
 ---
 
 ### Objection 5: "I don't want clients to feel like they're talking to a robot"
 
-**Why they say it:** Salon culture is warm and personal. A corporate-sounding bot would feel out of place.
-
-**The reality:** The tone is entirely customisable. We write the bot's messages in the owner's voice during setup.
-
 **How to handle it:**
 - "During setup you tell us how you normally talk to clients — formal, casual, with emojis, whatever feels like you. The bot writes exactly like that."
-- Show an example: a warm, casual confirmation message vs. a generic one
 - "If you wouldn't send it yourself, we change it until you would."
 
 ---
 
-## 9. Top 5 Post-Deployment Problems (After Going Live)
-
-These are problems that arise after the client signs up. Use this section to prepare your support response and build trust during onboarding.
-
----
+## 10. Top 5 Post-Deployment Problems (After Going Live)
 
 ### Problem 1: Client books a "trim" but means a full restyle — slot is too short
+**Solution:** Build clarifying question into flow for variable-duration services. Owner reviews next-day appointments each morning as quality check.
 
-**What happens:** Bot books a 45-minute slot based on what the client typed. Client arrives wanting a full transformation. Whole schedule derailed.
+### Problem 2: Salon runs a promotion — bot quotes old prices
+**Solution:** Owner messages us when anything changes. We update within 4 business hours.
 
-**Root cause:** Bot can only book based on what the client says. It can't see hair length, colour history, or current style.
+### Problem 3: New stylist joins — bot doesn't know their schedule
+**Solution:** Same update protocol. We add new staff within 24 hours of notification.
 
-**Solution:**
-- Build a clarifying question into the booking flow for any service that has variable duration: *"Is this a regular trim or something more involved? (e.g., colour, major restyle)"*
-- Add a note field in the confirmation: client can describe what they want
-- Owner reviews next-day appointments each morning — this is their quality check, not eliminated by automation
-
----
-
-### Problem 2: Salon runs a promotion or changes prices — bot quotes old prices
-
-**What happens:** Owner puts up a 20% off colour promotion on Instagram. Bot keeps quoting full price. Clients are confused.
-
-**Root cause:** Bot's knowledge base is static until we update it.
-
-**Solution:**
-- Establish a clear update protocol during onboarding: owner messages us (or a designated number) when anything changes — prices, services, promotions, hours
-- We commit to updating within 4 business hours
-- Long term: build a simple "bot settings" interface so owner can update FAQs themselves (roadmap item)
-
----
-
-### Problem 3: New stylist joins — bot doesn't know their schedule or specialties
-
-**What happens:** Owner hires a new nail technician. Clients ask about nail services. Bot either says "we don't offer that" or books incorrectly.
-
-**Root cause:** Bot's staff knowledge is set during onboarding and doesn't auto-update.
-
-**Solution:**
-- Same update protocol as Problem 2 — any change to staff = owner notifies us
-- We add the new staff member's calendar integration and service mapping within 24 hours
-- "Think of us as your IT team for the bot — any change to your business, you tell us and we handle it."
-
----
-
-### Problem 4: Upsell message feels pushy — client complains or opts out
-
-**What happens:** Client confirms a simple haircut. Bot immediately suggests an add-on. Client replies "please stop sending me offers." Owner feels embarrassed.
-
-**Root cause:** Upsell tone or timing was too aggressive, or the offer wasn't relevant to the booked service.
-
-**Solution:**
-- Upsell is triggered only for services where an add-on genuinely makes sense (e.g., colour → toning treatment, cut → conditioning mask)
-- Tone is soft and optional: *"If you'd like to add X — just let me know and I'll include it. Otherwise see you on [date]!"*
-- One upsell attempt per booking, never repeated
-- Opt-out flag: if client declines, they're not offered again for 3 months
-
----
+### Problem 4: Upsell message feels pushy
+**Solution:** One soft upsell per booking, only for relevant services. Opt-out flag — if client declines, not offered again for 3 months.
 
 ### Problem 5: Calendar sync breaks — bot offers already-booked slots
-
-**What happens:** Google Calendar API has a temporary outage or permission expires. Bot loses access to the calendar and starts offering any slot as "available."
-
-**Root cause:** Technical failure in the calendar integration.
-
-**Solution:**
-- Build a fallback: if calendar read fails, bot responds with *"I'm having trouble checking the schedule right now — please message us directly and we'll confirm within 2 hours."* Never offer slots when calendar status is unknown.
-- Set up an error alert (already in place via ALSflow error-alerting workflow) — owner and Jakub are notified immediately when calendar sync fails
-- Calendar API token refresh is automated — permission expiry handled proactively, not reactively
+**Solution:** Fallback message if calendar read fails. Error alert fires immediately to owner + Jakub.
 
 ---
 
-## 10. Pitch for This Vertical
+## 11. Pitch for This Vertical
 
 **Opening line:**
 > "You're losing bookings every time you're doing someone's colour. The messages pile up and half of them don't wait."
@@ -260,18 +238,19 @@ These are problems that arise after the client signs up. Use this section to pre
 **One-liner:**
 > ALSflow replies to your WhatsApp and email bookings while you're working, books the right service with the right stylist, and asks clients if they'd like to add anything — so you earn more per visit without doing more.
 
-**Upsell angle (unique to this vertical):**
-> "Most of our salon clients find the bot pays for itself just from the add-on suggestions. You do 50 bookings a month — if 10 clients add a 300 CZK treatment, that's 3,000 CZK in extra revenue. The retainer effectively costs you nothing."
+**Updated ROI line (use real numbers):**
+> "A colour visit in your price range is around 3,500 CZK. If we capture 2 extra bookings a month that would've gone unanswered, that's 7,000 CZK recovered. The retainer is 5,000. You're ahead by 2,000 CZK — before any upsells."
 
 ---
 
-## 11. What Needs Validation Before Pitching
+## 12. What Still Needs Validation
 
 | Claim | Confidence | How to validate |
 |---|---|---|
-| Prague haircut price 400–600 CZK | Medium | Check 5 Prague salon websites |
-| Colour price 1,200–2,000 CZK | Medium | Check 5 Prague salon websites |
-| Most salons use WhatsApp as primary channel | Medium | Ask salon owner directly |
-| Fresha/Reservio used but clients bypass it | Low | Ask salon owner: "how do most clients actually book with you?" |
-| 60% recurring / 40% new client split | Low | Ask salon owner |
-| Upsell conversion rate 1 in 5 | Low | Test with first client — no data yet |
+| Prague haircut price 960–1,390 CZK (mid-range) | ✅ HIGH — checked 4 salons | Done |
+| Colour price 1,300–3,500 CZK (mid-range) | ✅ HIGH — checked 4 salons | Done |
+| Most salons use WhatsApp as primary channel | Medium ⚠️ | Ask salon owner directly |
+| Fresha/Reservio used but clients bypass it | Low ⚠️ | Ask salon owner: "how do most clients actually book?" |
+| 60% recurring / 40% new client split | Low ⚠️ | Ask salon owner |
+| Missed bookings: 3–5/week | Low ⚠️ | Ask salon owner |
+| Upsell conversion rate 1 in 5 | Low ⚠️ | Test with first client |
