@@ -76,6 +76,10 @@ VÁŠ AI.
 - [ ] Set up LinkedIn content calendar (1–2 posts/week)
 - [ ] Close first paying client
 
+**Early traction / social proof (do in parallel):**
+- [ ] Offer 1-month free trial to a friend/family business in exchange for testimonial + structured feedback
+- [ ] Run a 30-min demo call with physio contact — show the bot live, don't just describe it
+
 **Product & Strategy:**
 - [ ] Define pricing model: recurring vs one-time appointment bots
 - [ ] Design add-on upsell module concept (post-appointment product/service recommendations)
@@ -88,6 +92,19 @@ VÁŠ AI.
 - [ ] GDPR: document all data flows and server locations; ensure EU-only data residency; prepare DPA
 - [ ] Research EU AI Act applicability to booking and communication bots in Czech Republic
 - [ ] Add data handling clause to client contract
+
+---
+
+## Open Learning Questions (resume next session)
+
+These questions were asked on 2026-05-06 and partially answered. Resume from here.
+
+- **TAM/SAM/SOM:** If an investor asked "how big is this?", what would you say is your realistic year-1 target in CZK revenue?
+- **Segmentation:** For the physio vertical specifically, what are the 2–3 patient personas you'd design the bot around?
+- **Business Model Canvas:** What do you think it adds on top of the Value Proposition Canvas you already know?
+- **Porter's Five Forces:** Still at 0/3 — introduce and apply next session.
+- **Income statement:** At what number of clients does ALSflow replace your father's 12,000 CZK/month support, assuming average retainer of 5,500 CZK?
+- **VAT (DPH):** Threshold is 2M CZK/year — ask Jakub to apply this to his revenue projections next session.
 
 ---
 
@@ -111,11 +128,11 @@ VÁŠ AI.
 - [ ] Market segmentation (0/3)
 - [ ] Ansoff Matrix (0/3)
 - [x] Positioning [LEARNED — 2026-04-22]
-- [ ] Sales motion differences — SMB vs. mid-market vs. enterprise (0/3)
+- [ ] Sales motion differences — SMB vs. mid-market vs. enterprise (1/3 — 2026-05-06)
 
 ### Competitive Analysis
 - [ ] Porter's Five Forces (0/3)
-- [ ] Differentiation vs. cost leadership (0/3)
+- [ ] Differentiation vs. cost leadership (1/3 — 2026-05-06)
 - [ ] Competitor positioning map (0/3)
 - [ ] Win/loss analysis (0/3)
 
@@ -124,7 +141,7 @@ VÁŠ AI.
 - [ ] Balance sheet basics (0/3)
 - [ ] Key ratios (0/3)
 - [x] Break-even analysis [LEARNED — 2026-04-20]
-- [ ] Pricing strategy — cost-plus vs. value-based vs. competitive (0/3)
+- [ ] Pricing strategy — cost-plus vs. value-based vs. competitive (1/3 — 2026-05-06)
 
 ### Czech Business & Tax
 - [x] OSVČ structure [LEARNED — 2026-04-22]
