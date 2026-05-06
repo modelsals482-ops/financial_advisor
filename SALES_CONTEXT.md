@@ -67,7 +67,7 @@ VÁŠ AI.
 **ICP & Vertical Research — do before any outreach:**
 - [ ] Call physio contact — 10-min Mom Test call (use script in `docs/vertical_physio.md` §11)
 - [ ] Validate numbers in `docs/vertical_physio.md` — session prices, booking patterns, tools used
-- [ ] Validate numbers in `docs/vertical_salon.md` — check 5 Prague salon websites for pricing
+- [x] Validate numbers in `docs/vertical_salon.md` — checked 5 Prague salon websites ✅ 2026-05-06
 - [ ] Refine ICP: document persona-specific UI/UX requirements (35-year-old vs 60-year-old)
 - [ ] Explore use cases beyond booking for physio vertical (upsell, follow-up, product recommendations)
 
